@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formula bilan berilgan ketma-ketlikning dastlabki yigirmata hadining o'rta arifmetigini toping.",
+        "options": "A) $16\\frac{3}{4}$\nB) $16\\frac{1}{4}$\nC) $14\\frac{1}{4}$\nD) $14\\frac{3}{4}$",
+        "reasoning": "Ketma-ketlik arifmetik progressiya bo'lgani uchun o'rta arifmetik birinchi va yigirmanchi hadlar yig'indisining yarmi bilan teng: $(x_1 + x_{20})/2 = (2.5 + 31)/2 = 16.75$.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "Daues rejasi qachon qabul qilingan?",
+        "options": "A) 1930-yilda\nB) 1924-yilda\nC) 1918-yilda\nD) 1929-yilda",
+        "reasoning": "Daues rejasi Germaniyaning urushdan keyingi iqtisodiy holatini barqarorlashtirish uchun 1924-yilda qabul qilingan.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "O'zgarmas tok manbayiga ulangan yassi kondensator berilgan. Uning qoplamalari orasidagi masofa 2 marta orttirilsa, kondensatorning energiyasi qanday o'zgaradi?",
+        "options": "A) 2 marta ortadi\nB) 2 marta kamayadi\nC) 4 marta kamayadi\nD) 4 marta ortadi",
+        "reasoning": "Kondensator sig'imi masofaga teskari proporsional ($C = \\varepsilon \\varepsilon_0 S/d$). Kuchlanish o'zgarmas bo'lganda, energiya $W = \\frac{1}{2}CU$ formulasi bo'yicha sig'im kamayishi bilan 2 marta kamayadi.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "$\\frac{\\sqrt{9-x^{2}}}{2x+5}=\\frac{\\sqrt{9-x^{2}}}{x-5}$ tenglama nechta haqiqiy ildizga ega?",
+        "options": "A) 4\nB) 3\nC) 0\nD) 2",
+        "reasoning": "Tenglama $\\sqrt{9-x^2}=0$ bo'lganda (ya'ni $x=\\pm 3$) yoki maxrajlar teng bo'lganda ($2x+5=x-5 \\Rightarrow x=-10$) bajariladi. Ammo $x=-10$ qiymati ildiz ostini manfiy qilgani uchun faqat $x=3$ va $x=-3$ ildizlar hisoblanadi.",
+        "answer_letter": "D"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

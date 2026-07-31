@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Quyidagi janglar bo'lib o'tgan yillariga qarab to'g'ri xronologik tartibda joylashtirilgan javobni belgilang.\n1) «Xalqlar jangi»; 2) Borodino jangi;\n3) Vaterloo jangi.",
+        "options": "A) 1, 3, 2\nB) 2, 3, 1\nC) 2, 1, 3\nD) 1, 2, 3",
+        "reasoning": "Berilgan janglar quyidagi yillarda bo'lib o'tgan: Borodino jangi (1812), Xalqlar jangi (1812), Vaterloo jangi (1815). Xronologik tartibga ko'ra, eng avval Borodino jangi, keyin Xalqlar jangi va eng oxirida Vaterloo jangi keladi. Bu tartib 2, 1, 3 variantiga mos keladi.",
+        "answer_letter": "C"
+      },
+      {
+        "augmented": true,
+        "question": "Bilimli, ma'naviyatli, keng mushohadali yoshlarni tarbiyalash dolzarb vazifa sanaladi. Ushbu gapdagi so'z birikmalari haqida berilgan to'g'ri ma'lumotni aniqlang.",
+        "options": "A) Tobe va hokim qismi aniqlovchi vazifasini bajargan so'z birikmasi ishtirok etgan.\nB) Barcha so'z birikmalarining tobe qismi yasama so'z bilan ifodalangan.\nC) Tobe va hokim qismlari ot turkumiga oid so'z bilan ifodalangan so'z birikmasi ishtirok etgan.\nD) Barcha so'z birikmalarida tobe va hokim qismlar bitishuv usulida bog'langan.",
+        "reasoning": "Berilgan gapda \"Bilimli, ma'naviyatli, keng mushohadali yoshlarni tarbiyalash dolzarb vazifa sanaladi.\" jumlasi mavjud. Bu yerda \"keng mushohadali\" so'z birikmasi aniqlovchi vazifasini bajarib, \"yoshlarni\" ot turkumiga nisbatan kelgan. Shu sababli, A variant to'g'ri ma'lumotni beradi.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi ijodkor hukmdorlardan biriga jo'natgan maktubida adolatning qadrini ham, may ichmaslikning foydasini ham Muhammad payg'ambar (s.a.v.) ning so'zlari bilan mustahkamlab: «Bir soatlik adolat ikki dunyo - insonlar va jinlar dunyosi ibodatidan yaxshiroqdir, chog'ir esa yaramasliklar onasidir, jami yomonliklar undan tug'iladi, barcha yaxshilik va yomonlik bu ikki narsa ichiga kiradi», - deya tushuntiradi?",
+        "options": "A) Ogahiy\nB) Nosiruddin Rabg'uziy\nC) Alisher Navoiy\nD) Imom al-Buxoriy",
+        "reasoning": "Berilgan matnda Muhammad payg'ambar (s.a.v.) ning so'zlari bilan adolat va may ichmaslikning ahamiyatini ta'kidlash va bu maktubni yozgan ijodkorni aniqlash kerak. Ushbu iqtibos va uslubiy jihatlar ko'pincha Alisher Navoiyning adabiy asarlarida uchraydi.",
+        "answer_letter": "C"
+      },
+      {
+        "augmented": true,
+        "question": "Rossiyada 1905-yilda qabul qilingan saylov to'g'risidagi qonun imperator Nikolay II tomonidan nechanchi yilda bekor qilingan?",
+        "options": "A) 1908-yilda\nB) 1906-yilda\nC) 1907-yilda\nD) 1909-yilda",
+        "reasoning": "1905-yilda qabul qilingan saylov to'g'risidagi qonun imperator Nikolay II tomonidan 1907-yilda bekor qilingan. Bu tarixiy faktga asoslanib javob berildi.",
+        "answer_letter": "C"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

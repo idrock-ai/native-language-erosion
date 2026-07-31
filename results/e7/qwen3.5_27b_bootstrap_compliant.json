@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Bir dalga leğeninde oluşturulan su dalgası için  \r\nI.   Leğenin derinliği aynı kalmak şartıyla dalganın frekansı artırılırsa dalga boyu azalır.  \r\nII.  Dalga kaynağının özellikleri değiştirilmeden suyun derinliği azaltılırsa dalga boyu azalır.  \r\nIII. Dalganın genliği artırılırsa dalganın enerjisi artar.  \n ifadelerinden hangileri doğrudur?",
+        "options": "A) I ve II\nB) Yalnız I\nC) Yalnız II\nD) I, II ve III\nE) II ve III",
+        "reasoning": "Derinlik sabitken frekans artarsa dalga boyu azalır (I doğru), derinlik azalırsa dalga hızı ve dolayısıyla dalga boyu azalır (II doğru), ayrıca genlik arttıkça dalganın enerjisi artar (III doğru). Bu nedenle tüm ifadeler doğrudur.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "  $\\(\\mathrm{\\int \\dfrac{2-\\sqrt[3] {x}}{2+\\sqrt[3] {x}}\\ dx}\\)$     integralinde   $\\(\\mathrm{\\sqrt[3] {x}=u} \\)$    dönüşümü yapılarak aşağıdaki integrallerden hangisi elde edilir?                                ",
+        "options": "A) $\\(\\mathrm{\\int \\dfrac{2+u}{2-u}\\ du} \\)$\nB) $\\(\\mathrm{\\int \\dfrac{6u^{2}-3u^{3}}{2+u}\\ du} \\)$\nC) $\\(\\mathrm{\\int \\dfrac{3u^{2}-u^{3}}{2+u}\\ du}\\)$\nD) $\\(\\mathrm{\\int \\dfrac{2-u}{2+u}\\ du}\\)$\nE) $\\(\\mathrm{\\int \\dfrac{2u+u^{2}}{2-u}\\ du} \\)$",
+        "reasoning": "$\\sqrt[3]{x} = u$ dönüşümü yapıldığında $x = u^3$ ve $dx = 3u^2 du$ olur. Bu değerler integralde yerine konulduğunda $\\int \\frac{2-u}{2+u} \\cdot 3u^2 \\, du = \\int \\frac{6u^2 - 3u^3}{2+u} \\, du$ ifadesi elde edilir.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "Türgişler, Emevilerle yaptıkları uzun savaşlar sonrasında Arapları yenmişler ve İslamiyet'in Orta Asya'ya yayılmasını engellemişlerdir. Buna göre aşağıdaki yargılardan hangisine ulaşılamaz?",
+        "options": "A) Orta Asya'nın Araplaşması engellenmiştir.\nB) İslamiyet'in doğuda yayılışı bir süreliğine durmuştur.\nC) Emevilerden askerî alanda üstündürler.\nD) Türgişler, Türk kültürünün korunmasında etkili olmuşlardır.\nE) Türkler İslamiyet'in koruyuculuğunu üstlenmişlerdir.",
+        "reasoning": "Metinde Türgişlerin İslamiyet'in yayılmasını engellediği açıkça belirtilmiştir, bu nedenle İslamiyet'in koruyuculuğunu üstlendikleri yargısına ulaşılamaz. Diğer seçenekler metindeki \"Arapları yenmişler\" ve \"yayılmasını engellemişler\" ifadelerinden doğrudan çıkarılabilir.",
+        "answer_letter": "E"
+      },
+      {
+        "augmented": true,
+        "question": "$\\(\\dfrac{3^{4}\\cdot 2^{5}+2^{4}\\cdot 3^{5}}{45}\\)$     işleminin sonucu aşağıdakilerden hangisidir?",
+        "options": "A) 108\nB) 216\nC) 180\nD) 144\nE) 120",
+        "reasoning": "Paydaki ifade $3^4 \\cdot 2^4$ ortak çarpanı alınarak $2^4 \\cdot 3^4 \\cdot (3+2)$ şeklinde düzenlenir ve payda 45 ($9 \\cdot 5$) ile sadeleştirilerek $16 \\cdot 9 \\cdot 5 / 45 = 16 \\cdot 9 = 144$ sonucu bulunur.",
+        "answer_letter": "D"
+      }
+    ],
+    "signature": {
+      "instructions": "Türkçe test sorusunu cevapla.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Çok kısa gerekçe, en fazla 2 cümle."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Sadece bir harf: A, B, C, D veya E."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Navoiyning qaysi g'azalida majoziy tasvir orqali ilohiy ishq kuylanib, dastlabki besh baytda boshdan oxir lirik qahramonning va'da berib, so'zida turmagan yorni kuta-kuta chekkan iztiroblari haqida so'z boradi, begona baytda esa ishqda undan ko'ra «avvalqadam» bo'lgan «tolibi sodiq», ya'ni pir izlayotgani bayon qilinadi?",
+        "options": "A) «Deyin» radifli\nB) «Kelmadi» radifli\nC) «Bo'ldum sanga» radifli\nD) «Qilg'il» radifli",
+        "reasoning": "Navoiyning «Kelmadi» radifli g'azalida dastlabki besh baytda yorning va'dasini buzib kelmasligi va shu sababli lirik qahramonning iztirobi tasvirlangan, begona baytda esa haqiqiy ishqda pirni izlash haqida so'z boradi. Bu tavsif aynan «Kelmadi» g'azalining mazmuniga to'g'ri keladi.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi gapda hokim qismi sifatlovchi aniqlovchi vazifasida kelgan to'ldiruvchili birikma qatnashgan?",
+        "options": "A) Tilning sofligi, ma'no aniqligi, o'tkirligi uchun kurash - madaniyat quroli uchun kurashdir.\nB) Til do'stlik va hamjihatlikni qaror toptirishning eng qulay vositasi ekanligi shubhasizdir.\nC) Ko'p o'ylaydigan odam iloji boricha kam so'z ishlatib, ko'proq fikr berishga intilib gapiradi.\nD) O'rnida aytilgan ezgu fikr dunyoni harakatlantiruvchi kuchdir.",
+        "reasoning": "D variantidagi \"o'rnida\" iborasi \"aytilgan\" fe'lga nisbatan hokim qismi sifatlovchi vazifasida kelgan to'ldiruvchili birikma hisoblanadi. Boshqa variantlarda bunday grammatik tuzilma uchun shartlar to'liq to'g'ri kelmaydi.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Bu g'azalda shoir ishqni vodiyga, qalbdagi ohi bilan oshiqlar qalbini yondirishini qamishzorga o't qalashga o'xshatib, tashbeh san'atining ajoyib namunasini yaratgan. Oshiq o'zini hakka qushiga (hakkasifat), parvonaga (parvonasifat) o'xshatib betakror badiiy tasvir yaratgan. Ushbu ma'lumot qaysi g'azal haqida?",
+        "options": "A) «O'rtar» radifli g'azal (Mashrab)\nB) «Qilg'il» radifli g'azal (Navoiy)\nC) «Bo'ldum sanga» radifli g'azal (Navoiy)\nD) «O'ttum» radifli g'azal (Mashrab)",
+        "reasoning": "Mashrabning «O'ttum» radifli g'azalida shoir ishqni qamishzorga o't qalishga, o'zini esa o'tga yonib ketadigan parvona va hakka qushiga o'xshatib tasvirlaydi. Bu tasvirlar aynan Mashrabning ushbu mashhur g'azaliga xosdir.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi javobda Odil Yoqubovning qissalari berilgan?",
+        "options": "A) «Qanot juft bo'ladi», «Billur qandillar»\nB) «Yurak yonmog'i kerak», «Bir koshona sirlari»\nC) «Ko'hna dunyo», «Olma gullaganda»\nD) «Qadrdon dalalar», «Hukm»",
+        "reasoning": "Odil Yoqubovning «Qanot juft bo'ladi» va «Billur qandillar» asarlari qissalar hisoblanadi. Boshqa variantlardagi asarlar uning boshqa janrlaridagi yoki boshqa mualliflarning asarlari bo'lishi mumkin.",
+        "answer_letter": "A"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

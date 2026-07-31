@@ -1,0 +1,4 @@
+dspy-ai==3.2.1
+litellm>=1.0
+tqdm>=4.66
+optuna>=4.0        # MIPROv2 (E8) Bayesian search backend; dspy raises ImportError without it

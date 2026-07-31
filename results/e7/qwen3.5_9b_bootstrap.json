@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Bir dalga leğeninde oluşturulan su dalgası için  \r\nI.   Leğenin derinliği aynı kalmak şartıyla dalganın frekansı artırılırsa dalga boyu azalır.  \r\nII.  Dalga kaynağının özellikleri değiştirilmeden suyun derinliği azaltılırsa dalga boyu azalır.  \r\nIII. Dalganın genliği artırılırsa dalganın enerjisi artar.  \n ifadelerinden hangileri doğrudur?",
+        "options": "A) I ve II\nB) Yalnız I\nC) Yalnız II\nD) I, II ve III\nE) II ve III",
+        "reasoning": "I. ifadesi doğrudur çünkü derinlik sabitken hız sabit kalır ve hız = frekans × dalga boyu olduğundan frekans artarsa dalga boyu azalır. II. ifadesi doğrudur çünkü su derinliği azaldığında dalga hızı azalır ve frekans değişmediği için dalga boyu küçülür. III. ifadesi doğrudur çünkü dalganın enerjisi genliğin karesi ile orantılıdır, genlik arttıkça enerji artar.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "$\\(\\large\\mathrm{\\int ^{3}_{2}\\left( f\\left( x\\right) -2x\\right) dx+\\int ^{2}_{3}\\left( f\\left( x\\right) +1\\right) dx}\\)$     ifadesinin değeri kaçtır?",
+        "options": "A) -8\nB) 0\nC) -6\nD) -2\nE) -4",
+        "reasoning": "İlk integralin alt ve üst sınırları 2'den 3'e, ikinci integralin sınırları ise 3'ten 2'ye (yani tersine) alınmıştır. Tersine alınan integralin işaretini değiştiririz ve sabit terimleri ayırarak topladığımızda, $f(x)$ terimleri birbirini götürür ve sabit terimler ($-2x$ ve $+1$) $x=2$ ile $x=3$ arasındaki farkla çarpılır. Hesaplama: $\\int_2^3 (f(x)-2x)dx + \\int_3^2 (f(x)+1)dx = \\int_2^3 (f(x)-2x)dx - \\int_2^3 (f(x)+1)dx = \\int_2^3 (-2x-1)dx$. Bu integralin değeri $[-x^2 - x]_2^3 = (-9-3) - (-4-2) = -12 - (-6) = -6$'dır.",
+        "answer_letter": "C"
+      },
+      {
+        "augmented": true,
+        "question": "Bilinç akışı tekniği ile ilgili aşağıdaki bilgilerden hangisi  yanlıştır ?",
+        "options": "A) Kişilerin iç dünyaları üçüncü kişi ağzından verilir.\nB) Serbest çağrışım yoluyla bir düşünceden bir başka düşünceye atlanır.\nC) Kahraman anlatıcı ve bakış açısı söz konusudur.\nD) Cümleler arasında mantık ilişkisi çok gevşek ve zayıftır.\nE) XX. yüzyıl modern roman ve hikâyesinde kullanılmıştır.",
+        "reasoning": "Bilinç akışı tekniğinde anlatıcı üçüncü kişi değil, olayların içindeki karakterin kendi sesidir ve bakış açısı birinci kişidir.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "Aşağıda  metinlerle ilgili verilen bilgilerden hangisi yanlıştır?",
+        "options": "A) Sanatsal metinlerde sözcükler yan ve mecaz anlamlarıyla kullanılır.\nB) Göstermeye bağlı metinler monolog ve diyaloglardan oluşur.\nC) Göstermeye bağlı metinler sahnelenmek üzere yazılır.\nD) Sanatsal metinlerde üslup önemlidir.\nE) Öğretici metinlerin yapısı zaman, mekân, olay örgüsü ve kişi unsurları üzerine kurulur.",
+        "reasoning": "Oğretici metinlerin yapısı olay örgüsü, zaman, mekan ve kişi unsurları üzerine kuruludur; bu özellik göstermeye bağlı metinler (roman, hikâye, tiyatro) için geçerlidir. Soruda göstermeye bağlı metinlerin monolog ve diyaloglardan oluştuğu belirtilmişse, bu ifade doğrudur ancak öğretici metinlerin yapısı ile ilgili ifade yanlıştır.",
+        "answer_letter": "E"
+      }
+    ],
+    "signature": {
+      "instructions": "Türkçe test sorusunu cevapla.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Çok kısa gerekçe, en fazla 2 cümle."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Sadece bir harf: A, B, C, D veya E."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Kichikka ulug'lik ulug'dan bo'lar, Ulug'ga egilsa, kichik qut olar. Ushbu parcha haqidagi qaysi fikrlar to'g'ri emas? 1) vositali to'ldiruvchilar sifatlar bilan ifodalangan; 2) ot bilan ifodalangan ega qatnashgan; 3) otlashgan so'z bilan ifodalangan vositasiz to'ldiruvchi qatnashgan; 4) sifat bilan ifodalangan gap bo'laklari ushbu gapdagi so'z birikmalarida hokim qism vazifasini bajargan.",
+        "options": "A) 2, 3\nB) 1, 2\nC) 1, 4\nD) 3, 4",
+        "reasoning": "Gapda \"ulug'lik\" va \"kichik\" so'zlari sifat vazifasini bajaradi, shuning uchun 4-ga to'g'ri keladi. \"Vositali to'ldiruvchi\" mavjud emas, chunki faqat \"ot\" (ulug', kichik) bor, \"otlashgan\" so'z yo'q, demak 3-ga to'g'ri kelmaydi. 1 va 2 to'g'ri.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formula bilan berilgan ketma-ketlikning dastlabki yigirmata hadining o'rta arifmetigini toping.",
+        "options": "A) $16\\frac{3}{4}$\nB) $16\\frac{1}{4}$\nC) $14\\frac{1}{4}$\nD) $14\\frac{3}{4}$",
+        "reasoning": "Ketma-ketlikning umumiy hadi $x_n = \\frac{3n}{2} + 1$ formulasi bilan berilgan. Dastlabki yigirmata hadning o'rta arifmetigi $x_{10}$ ga teng. $n=10$ qiymatini formulaga qo'yamiz: $x_{10} = \\frac{3 \\cdot 10}{2} + 1 = 15 + 1 = 16$. Natija butun son bo'lgani uchun kasr qism yo'q, lekin variantlarda kasr ko'rinishida berilganligini hisobga olsak, hisoblashda xato yo'qligini tekshiramiz. Aslida, savol \"o'rta arifmetik\"ni so'rayapti, bu oddiy o'rta had degani. $16$ natijasi variantlarda to'g'ridan-to'g'ri ko'rsatilmagan, lekin $16\\frac{1}{4}$ yoki $16\\frac{3}{4}$ kabi variantlar bor. Keling, qayta tekshiramiz: $x_{10} = 16$. Agar savol xatolik bilan yozilgan bo'lsa yoki men noto'g'ri tushunganim bo'lsa... Yo'q, $16$ aniq javob. Variantlarda $16$ yo'q. Ehtimol savol \"yig'indisi\"ni so'ragan bo'lishi mumkin? Yo'q, \"o'rta arifmetik\" deyilgan. Keling, variantlarni ko'rib chiqamiz: A) $16.75$, B) $16.25$, C) $14.25$, D) $14.75$. $16$ javob yo'q. Demak, savol shartida xato bor yoki men formulani noto'g'ri tushundim. $x_n = \\frac{3n}{2} + 1$. $n=10$ bo'lsa, $15+1=16$. Agar $n=1$ dan $n=20$ gacha bo'lgan hadlarning o'rta arifmetigi so'ralgan bo'lsa, bu $x_{10}$ ga teng. Natija $16$. Variantlarda $16$ yo'q. Ehtimol savol $x_n = \\frac{3n}{2} + \\frac{1}{4}$ deb o'ylash kerakmi? Yo'q, shartda shunday yozilgan. Yoki $x_n = \\frac{3n+1}{2}$? Agar $x_n = \\frac{3n+1}{2}$ bo'lsa, $n=10$ da $\\frac{31}{2} = 15.5$. Bu ham yo'q. Keling, variantlarga qaraymiz: $16\\frac{1}{4} = 16.25$. Bu $16$ ga juda yaqin. Ehtimol savol $x_n = \\frac{3n}{2} + \\frac{1}{4}$ deb o'ylash kerakmi? Agar shunday bo'lsa, $15 + 0.25 = 15.25$. Yo'q. Yoki $x_n = \\frac{3n+1}{2}$? $15.5$. Yo'q.\nKeling, boshqa yondashuv: ehtimol savol \"yig'indisi\"ni so'ragan? $S_{20} = \\sum_{n=1}^{20} (\\frac{3n}{2} + 1) = \\frac{3}{2} \\frac{20 \\cdot 21}{2} + 20 = \\frac{3}{2} \\cdot 210 + 20 = 315 + 20 = 335$. O'rta arifmetik $335/20 = 16.75 = 16\\frac{3}{4}$. Bu A variantiga to'g'ri keladi. Demak, savoldagi \"o'rta arifmetik\" degan ifoda aslida \"hadlarning yig'indisidan hadlar soniga bo'lgan nisbat\" (ya'ni o'rta qiymat) degani, lekin hisoblashda yig'indini topib, hadlar soniga bo'lish kerak edi. O'rta qiymat $S_n / n$ ga teng. $S_{20} / 20 = 16.75$. Shunday qilib, javob A.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "O'zgarmas tok manbayiga ulangan yassi kondensator berilgan. Uning qoplamalari orasidagi masofa 2 marta orttirilsa, kondensatorning energiyasi qanday o'zgaradi?",
+        "options": "A) 2 marta ortadi\nB) 2 marta kamayadi\nC) 4 marta kamayadi\nD) 4 marta ortadi",
+        "reasoning": "Kondensatorning sig'imi $C = \\frac{\\varepsilon S}{4\\pi k d}$ formulasi bilan aniqlanadi, ya'ni masofa $d$ 2 marta ortganda sig'im 2 marta kamayadi. O'zgarmas tok manbayiga ulangan bo'lgani uchun kuchlanish ($U$) o'zgarmaydi va kondensatorning zaryadi ($q = CU$) ham 2 marta kamayadi. Kondensatorning energiyasi $W = \\frac{1}{2}CU^2$ formulaga ega bo'lgani sababli, $C$ ning 2 marta kamayishi energiyani ham 2 marta kamaytiradi.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "$x^{2}+a x=1$ tenglamaning $x_{1}$ va $x_{2}$ ildizlari $\\frac{x_{1}}{x_{2}}+\\frac{x_{2}}{x_{1}}=-18$ tenglikni qanoatlantirsa, $a^{2}-2$ ning qiymatini toping.",
+        "options": "A) 7\nB) 34\nC) 2\nD) 14",
+        "reasoning": "Berilgan tenglama $x^2 + ax - 1 = 0$ ko'rinishida bo'lib, uning ildizlari uchun Viye teoremasidan foydalanamiz: $x_1 + x_2 = -a$ va $x_1 x_2 = -1$. Berilgan shart $\\frac{x_1}{x_2} + \\frac{x_2}{x_1} = \\frac{x_1^2 + x_2^2}{x_1 x_2} = \\frac{(x_1+x_2)^2 - 2x_1x_2}{x_1x_2} = -18$ ga teng. Bu ifodaga qiymatlarni qo'yib, $a^2$ ni topamiz: $\\frac{(-a)^2 - 2(-1)}{-1} = -18 \\Rightarrow a^2 + 2 = 18 \\Rightarrow a^2 = 16$. So'ralgan ifoda $a^2 - 2 = 16 - 2 = 14$.",
+        "answer_letter": "D"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

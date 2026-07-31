@@ -1,0 +1,36 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Savolga javob berish uchun quyidagi bosqichlarni bajaring:\n1. O'zbek tilidagi test savolini va berilgan javob variantlarini tahlil qiling.\n2. Muammoni hal qilish uchun juda qisqa (maksimal 2 gapdan iborat) mantiyali mulohaza yozing. Mulohozada savolning mazmunini qisqacha tushuntiring va to'g'ri variantni tanlash sababini keltiring.\n3. Oxirida faqat bitta katta harf (A, B, C yoki D) ko'rsatib, to'g'ri javob variantini aniqlang.\nChiqish formati: \"Reasoning: [Mulohaza]\\nAnswer Letter: [Harf]",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

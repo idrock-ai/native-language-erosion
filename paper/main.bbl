@@ -1,0 +1,130 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Hazratov et~al.(2026)Hazratov, Mansuraliyev, Asadov, Kayumov, and
+  Toshnazarov}]{dtm2026}
+Mardon Hazratov, Husanboy Mansuraliyev, Dovud Asadov, Abduaziz Kayumov, and
+  Qobiljon Toshnazarov. 2026.
+\newblock \href {https://doi.org/10.21227/e4h4-kp42} {Uzbek multiple-choice
+  question dataset for large language model evaluation}.
+\newblock IEEE Dataport.
+
+\bibitem[{Isbarov et~al.(2025)Isbarov, Akhundjanova, Hajili, Huseynova,
+  Gaynullin, Rzayev, Tursun, Turdubaeva, Saetov, Kharisov, Belginova,
+  Kenbayeva, Alisheva, K\"oksal, Rustamov, and Ataman}]{tumlu2025}
+Jafar Isbarov, Arofat Akhundjanova, Mammad Hajili, Kavsar Huseynova, Dmitry
+  Gaynullin, Anar Rzayev, Osman Tursun, Aizirek Turdubaeva, Ilshat Saetov,
+  Rinat Kharisov, Saule Belginova, Ariana Kenbayeva, Amina Alisheva, Abdullatif
+  K\"oksal, Samir Rustamov, and Duygu Ataman. 2025.
+\newblock {TUMLU}: A unified and native language understanding benchmark for
+  turkic languages.
+\newblock In \emph{ACL}.
+\newblock Aclanthology 2025.acl-long.1112.
+
+\bibitem[{Khattab et~al.(2024)Khattab, Singhvi, Maheshwari, Zhang, Santhanam,
+  Vardhamanan, Haq, Sharma, Joshi, Moazam, Miller, Zaharia, and
+  Potts}]{khattab2024dspy}
+Omar Khattab, Arnav Singhvi, Paridhi Maheshwari, Zhiyuan Zhang, Keshav
+  Santhanam, Sri Vardhamanan, Saiful Haq, Ashutosh Sharma, Thomas~T. Joshi,
+  Hanna Moazam, Heather Miller, Matei Zaharia, and Christopher Potts. 2024.
+\newblock {DSPy}: Compiling declarative language model calls into
+  self-improving pipelines.
+\newblock In \emph{ICLR}.
+\newblock ArXiv:2310.03714.
+
+\bibitem[{Liu et~al.(2025)Liu, Geng, Wu, Sucholutsky, Lombrozo, and
+  Griffiths}]{liu2025mind}
+Ryan Liu, Jiayi Geng, Addison~J. Wu, Ilia Sucholutsky, Tania Lombrozo, and
+  Thomas~L. Griffiths. 2025.
+\newblock Mind your step (by step): Chain-of-thought can reduce performance on
+  tasks where thinking makes humans worse.
+\newblock In \emph{ICML}.
+\newblock ArXiv:2410.21333.
+
+\bibitem[{Lundin et~al.(2025)Lundin, Zhang, Karim, Louzan, Wei, Adelani, and
+  Carroll}]{lundin2025tokentax}
+Jessica~M. Lundin, Ada Zhang, Nihal Karim, Hamza Louzan, Victor Wei, David
+  Adelani, and Cody Carroll. 2025.
+\newblock The token tax: Systematic bias in multilingual tokenization.
+\newblock \emph{arXiv preprint arXiv:2509.05486}.
+
+\bibitem[{Meincke et~al.()Meincke, Mollick, and Others}]{meincke2025decreasing}
+Lennart Meincke, Ethan Mollick, and Others.
+\newblock Prompting science report 2: The decreasing value of chain of thought
+  in prompting.
+\newblock Technical report.
+
+\bibitem[{Opsahl-Ong et~al.(2024)Opsahl-Ong, Ryan, Purtell, Broman, Potts,
+  Zaharia, and Khattab}]{opsahlong2024mipro}
+Krista Opsahl-Ong, Michael~J Ryan, Josh Purtell, David Broman, Christopher
+  Potts, Matei Zaharia, and Omar Khattab. 2024.
+\newblock Optimizing instructions and demonstrations for multi-stage language
+  model programs ({MIPROv2}).
+\newblock In \emph{EMNLP}.
+
+\bibitem[{Petrov et~al.(2023)Petrov, La~Malfa, Torr, and
+  Bibi}]{petrov2023tokenizer}
+Aleksandar Petrov, Emanuele La~Malfa, Philip~H.S. Torr, and Adel Bibi. 2023.
+\newblock Language model tokenizers introduce unfairness between languages.
+\newblock In \emph{NeurIPS}.
+
+\bibitem[{Sarmah et~al.(2024)Sarmah, Dutta, Grigoryan, Tiwari, Pasquali, and
+  Mehta}]{sarmah2024}
+Bhaskarjit Sarmah, Sourav Dutta, Suhasya Grigoryan, Mingshu Tiwari, Stefano
+  Pasquali, and Dhagash Mehta. 2024.
+\newblock Do {LLM}s consistently improve with prompt optimization? a
+  comparative study of {DSPy} teleprompters.
+\newblock \emph{arXiv:2412.15298}.
+
+\bibitem[{Sprague et~al.(2025)Sprague, Yin, Rodriguez, Jiang, Wadhwa, Singhal,
+  Zhao, Ye, Mahowald, and Durrett}]{sprague2025cot}
+Zayne Sprague, Fangcong Yin, Juan~Diego Rodriguez, Dongwei Jiang, Manya Wadhwa,
+  Prasann Singhal, Xinyu Zhao, Xi~Ye, Kyle Mahowald, and Greg Durrett. 2025.
+\newblock To {CoT} or not to {CoT}? chain-of-thought helps mainly on math and
+  symbolic reasoning.
+\newblock In \emph{ICLR}.
+\newblock ArXiv:2409.12183.
+
+\bibitem[{Tam et~al.(2024)Tam, Wu, Tsai, Lin, Lee, and Chen}]{tam2024format}
+Zhi~Rui Tam, Cheng-Kuang Wu, Yi-Lin Tsai, Chieh-Yen Lin, Hung-yi Lee, and
+  Yun-Nung Chen. 2024.
+\newblock Let me speak freely? a study on the impact of format restrictions on
+  performance of large language models.
+\newblock In \emph{EMNLP Industry Track}.
+\newblock ArXiv:2408.02442.
+
+\bibitem[{Togmanov et~al.(2025)Togmanov, Mukhituly, Turmakhan, Mansurov,
+  Goloburda, Sakip, Xie, Wang, Syzdykov, Laiyk, Aji, Kochmar, Nakov, and
+  Koto}]{kazmmlu2025}
+Mukhammed Togmanov, Nurdaulet Mukhituly, Diana Turmakhan, Jonibek Mansurov,
+  Maiya Goloburda, Akhmed Sakip, Zhuohan Xie, Yuxia Wang, Bekassyl Syzdykov,
+  Nurkhan Laiyk, Alham~Fikri Aji, Ekaterina Kochmar, Preslav Nakov, and Fajri
+  Koto. 2025.
+\newblock {KazMMLU}: Evaluating language models on kazakh, russian, and
+  regional knowledge.
+\newblock \emph{arXiv preprint arXiv:2502.12829}.
+
+\bibitem[{Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le,
+  and Zhou}]{wei2022cot}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia,
+  Ed~Chi, Quoc Le, and Denny Zhou. 2022.
+\newblock Chain-of-thought prompting elicits reasoning in large language
+  models.
+\newblock In \emph{NeurIPS}.
+
+\bibitem[{Y\"uksel et~al.(2024)Y\"uksel, K\"oksal, {\c{S}}enel, Korhonen, and
+  Sch\"utze}]{turkishmmlu2024}
+Arda Y\"uksel, Abdullatif K\"oksal, L\"utfi~Kerem {\c{S}}enel, Anna Korhonen,
+  and Hinrich Sch\"utze. 2024.
+\newblock {TurkishMMLU}: Measuring massive multitask language understanding in
+  turkish.
+\newblock In \emph{Findings of EMNLP}.
+\newblock ArXiv:2407.12402.
+
+\bibitem[{Zhu et~al.(2022)Zhu, Luo, and Liu}]{zhu2022rich}
+Zhaowei Zhu, Tianyi Luo, and Yang Liu. 2022.
+\newblock The rich get richer: Disparate impact of semi-supervised learning.
+\newblock In \emph{ICLR}.
+\newblock ArXiv:2110.06282.
+
+\end{thebibliography}

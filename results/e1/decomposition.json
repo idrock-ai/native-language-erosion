@@ -1,0 +1,86 @@
+{
+ "per_model": {
+  "gemma4:31b": {
+   "flips": {
+    "truncation": 0,
+    "format_drift": 0,
+    "content": 8
+   },
+   "b": 8,
+   "c": 9,
+   "n": 100
+  },
+  "gemma4:e4b": {
+   "flips": {
+    "truncation": 5,
+    "format_drift": 0,
+    "content": 10
+   },
+   "b": 15,
+   "c": 12,
+   "n": 100
+  },
+  "qwen3.5:27b": {
+   "flips": {
+    "truncation": 0,
+    "format_drift": 0,
+    "content": 6
+   },
+   "b": 6,
+   "c": 8,
+   "n": 100
+  },
+  "qwen3.5:4b": {
+   "flips": {
+    "truncation": 1,
+    "format_drift": 0,
+    "content": 13
+   },
+   "b": 14,
+   "c": 9,
+   "n": 100
+  },
+  "qwen3.5:9b": {
+   "flips": {
+    "truncation": 1,
+    "format_drift": 0,
+    "content": 11
+   },
+   "b": 12,
+   "c": 7,
+   "n": 100
+  },
+  "qwen3.6:27b": {
+   "flips": {
+    "truncation": 0,
+    "format_drift": 0,
+    "content": 10
+   },
+   "b": 10,
+   "c": 6,
+   "n": 100
+  }
+ },
+ "pooled": {
+  "deployment_p": 0.2273,
+  "deployment": {
+   "b": 65,
+   "c": 51,
+   "n": 600
+  },
+  "knowledge_p": 0.5008,
+  "knowledge": {
+   "b": 58,
+   "c": 50,
+   "n": 571
+  },
+  "rescue_p": 0.4558,
+  "rescue": {
+   "b": 62,
+   "c": 53,
+   "n": 600
+  },
+  "b": 65,
+  "c": 51
+ }
+}

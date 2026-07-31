@@ -1,0 +1,124 @@
+{
+ "model": "qwen3.5:4b",
+ "engine": "ollama",
+ "seed": 42,
+ "max_tokens": 512,
+ "optimizer": "MIPROv2",
+ "search": {
+  "num_candidates": 5,
+  "num_trials": 10,
+  "minibatch_size": 25,
+  "val_size": 100
+ },
+ "conditions": {
+  "cot": {
+   "deployment": {
+    "overall": 36.3,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 17,
+      "accuracy": 44.7
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 20,
+      "accuracy": 52.6
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 33,
+      "accuracy": 33.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 21,
+      "accuracy": 28.0
+     }
+    }
+   },
+   "rescue": {
+    "overall": 36.7,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 17,
+      "accuracy": 44.7
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 21,
+      "accuracy": 55.3
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 33,
+      "accuracy": 33.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 21,
+      "accuracy": 28.0
+     }
+    }
+   }
+  },
+  "dspy_mipro": {
+   "deployment": {
+    "overall": 37.1,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 20,
+      "accuracy": 52.6
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 20,
+      "accuracy": 52.6
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 24,
+      "accuracy": 24.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 29,
+      "accuracy": 38.7
+     }
+    }
+   },
+   "rescue": {
+    "overall": 37.5,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 20,
+      "accuracy": 52.6
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 20,
+      "accuracy": 52.6
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 25,
+      "accuracy": 25.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 29,
+      "accuracy": 38.7
+     }
+    }
+   }
+  }
+ },
+ "mipro_program": {
+  "n_demos": 1,
+  "demo_payload_chars": 700,
+  "instructions": "Sizga O'zbek tilidagi test savolini yechish va to'g'ri javobni aniqlash uchun quyidagi ma'lumotlarni talqin qilishingiz kerak:\n\n1. **Masala tuzilishini tahlil qiling**: Savolni diqqat bilan o'qing va shartlar, sonlar va ifodalarni aniq ajratib olasizmi? Agar savol raqamlar, o'lchov birliklari (masalan, sm, cm, mm) yoki ilmiy terminlar (masalan, \"otos\", \"sifat\", \"vosita\") bilan bog'liq bo'lsa, buni e'tiborga oling.\n2. **Qoralar variantini saralash**: Berilgan variantlar (A, B, C, D) o'rtasida qaysi bittasi savolni to'g'ri aks ettiruvchi ekanligini aniqlang. Agar savolda xatoliklarni aniqlash so'ralmoqda yoki to'g'ri va noto'g'ri fikrlar o'rtasida tanlov qilish talab qilsa, har bir variantdagi har bir fikrni tekshiring.\n3. **Qisqa mantiqiy yondashuv yarat**: Javobingizni qo'llab quvvatlovchi mantiqiy tushuntirishni diqqatga oling, lekin uni juda qisqa tuzing. Tushuntirish o'rniga faqat asosiy mantiqiy bosqichlarni aytib o'ting (masalan, birinchi bosqichni hisoblash, keyingi bosqichni qo'llab-quvvatlash). Tushuntirish maksimal 2 ta guruhli gapdan iborat bo'lishi kerak.\n4. **Tugallash va tekshirish**: Tugagandan keyin, savol shartlariga muvofiq javobingiz to'g'ri ekanligiga ishonchingiz komil bo'lishi uchun bir marta tekshiring.\n\nJavobingizni quyidagicha formatda taqdimoting:"
+ }
+}

@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formula bilan berilgan ketma-ketlikning dastlabki yigirmata hadining o'rta arifmetigini toping.",
+        "options": "A) $16\\frac{3}{4}$\nB) $16\\frac{1}{4}$\nC) $14\\frac{1}{4}$\nD) $14\\frac{3}{4}$",
+        "reasoning": "Berilgan ketma-ketlikning umumiy hadi $x_{n}=\frac{3n}{2}+1$ formulasiga ko'ra, dastlabki $N$ hadining o'rta arifmetik qiymati $\\frac{x_1 + x_N}{2}$ formulasi bilan topiladi. Bu yerda $N=20$ va $x_{20} = \\frac{3 \\cdot 20}{2} + 1 = 30 + 1 = 31$. $x_1 = \\frac{3 \\cdot 1}{2} + 1 = \\frac{3}{2} + 1 = \\frac{5}{2} = 2.5$. O'rta arifmetik qiymat: $\\frac{2.5 + 31}{2} = \\frac{33.5}{2} = 16.75$. $16.75$ ni arxa tipda $16\\frac{3}{4}$ deb yozish mumkin.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi javobdagi baytda tarse' she'riy san'at qo'llangan?",
+        "options": "A) Ikki mahbubni ko'rdum, bir-birisin ko'rmagan, Ikkisining o'rtasiga, do'stlar, qil ham sig'magan.\nB) Sendek menga bir yori jafokor topilmas, Mendek senga bir zori vafodor topilmas\nC) Hech kim mendek, ilohi, yoridin ayrulmasun, Mehribon munis o'shal dildoridin ayrilmasin.\nD) Har nechakim sabr ta'mirini bunyod ayladim, Ashk selobida vayron o'ldi obodim, eshit.",
+        "reasoning": "Tarse' (qarama-qarshilik) san'ati bir baytda bir-biriga zid ma'noli yoki tasvirlangan narsalarni birga keltirish orqali ta'sir kuchaytiriladi. A baytida \"ko'rdum\" va \"ko'rmagan\" kabi qarama-qarshliklar mavjud bo'lsa-da, B baytida \"bir yori jafokor\" va \"bir zori vafodor\" kabi juftliklar, shuningdek, \"ko'rdum/ko'rmagan\" kabi aniq qarama-qarshiliklar ko'proq namoyon bo'ladi. Biroq, eng aniq va keng ma'noda tarse' san'ati ko'rinadigan joy B baytida \"jafokor\" (yomon) va \"vafodor\" (yaxshi) sifatlarning bir-biriga qarama-qarshi qo'yilishi bilan ta'kidlanadi.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "Bilimli, ma'naviyatli, keng mushohadali yoshlarni tarbiyalash dolzarb vazifa sanaladi. Ushbu gapdagi so'z birikmalari haqida berilgan to'g'ri ma'lumotni aniqlang.",
+        "options": "A) Tobe va hokim qismi aniqlovchi vazifasini bajargan so'z birikmasi ishtirok etgan.\nB) Barcha so'z birikmalarining tobe qismi yasama so'z bilan ifodalangan.\nC) Tobe va hokim qismlari ot turkumiga oid so'z bilan ifodalangan so'z birikmasi ishtirok etgan.\nD) Barcha so'z birikmalarida tobe va hokim qismlar bitishuv usulida bog'langan.",
+        "reasoning": "Berilgan gapda \"Bilimli, ma'naviyatli, keng mushohadali yoshlarni tarbiyalash dolzarb vazifa sanaladi.\" jumlasi mavjud. Bu yerda \"keng mushohadali\" so'z birikmasi aniqlovchi vazifasini bajarib, \"yoshlarni\" ot turkumiga nisbatan kelgan. Shu sababli, A variant to'g'ri ma'lumotni beradi.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi ijodkor hukmdorlardan biriga jo'natgan maktubida adolatning qadrini ham, may ichmaslikning foydasini ham Muhammad payg'ambar (s.a.v.) ning so'zlari bilan mustahkamlab: «Bir soatlik adolat ikki dunyo - insonlar va jinlar dunyosi ibodatidan yaxshiroqdir, chog'ir esa yaramasliklar onasidir, jami yomonliklar undan tug'iladi, barcha yaxshilik va yomonlik bu ikki narsa ichiga kiradi», - deya tushuntiradi?",
+        "options": "A) Ogahiy\nB) Nosiruddin Rabg'uziy\nC) Alisher Navoiy\nD) Imom al-Buxoriy",
+        "reasoning": "Berilgan matnda Muhammad payg'ambar (s.a.v.) ning so'zlari bilan adolat va may ichmaslikning ahamiyatini ta'kidlash va bu maktubni yozgan ijodkorni aniqlash kerak. Ushbu iqtibos va uslubiy jihatlar ko'pincha Alisher Navoiyning adabiy asarlarida uchraydi.",
+        "answer_letter": "C"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

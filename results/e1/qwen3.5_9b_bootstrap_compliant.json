@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Kichikka ulug'lik ulug'dan bo'lar, Ulug'ga egilsa, kichik qut olar. Ushbu parcha haqidagi qaysi fikrlar to'g'ri emas? 1) vositali to'ldiruvchilar sifatlar bilan ifodalangan; 2) ot bilan ifodalangan ega qatnashgan; 3) otlashgan so'z bilan ifodalangan vositasiz to'ldiruvchi qatnashgan; 4) sifat bilan ifodalangan gap bo'laklari ushbu gapdagi so'z birikmalarida hokim qism vazifasini bajargan.",
+        "options": "A) 2, 3\nB) 1, 2\nC) 1, 4\nD) 3, 4",
+        "reasoning": "Gapda \"ulug'lik\" va \"kichik\" so'zlari sifat vazifasini bajaradi, shuning uchun 4-ga to'g'ri keladi. \"Vositali to'ldiruvchi\" mavjud emas, chunki faqat \"ot\" (ulug', kichik) bor, \"otlashgan\" so'z yo'q, demak 3-ga to'g'ri kelmaydi. 1 va 2 to'g'ri.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Quyidagi janglar bo'lib o'tgan yillariga qarab to'g'ri xronologik tartibda joylashtirilgan javobni belgilang.\n1) «Xalqlar jangi»; 2) Borodino jangi;\n3) Vaterloo jangi.",
+        "options": "A) 1, 3, 2\nB) 2, 3, 1\nC) 2, 1, 3\nD) 1, 2, 3",
+        "reasoning": "Borodino jangi 1812-yilda, «Xalqlar jangi» 1813-yilda, Vaterloo jangi esa 1815-yilda bo'lib o'tgan. Shunday qilib, to'g'ri xronologik tartib: 2, 1, 3.",
+        "answer_letter": "C"
+      },
+      {
+        "augmented": true,
+        "question": "1870-yilda quyidagi qaysi davlatda imperator hokimiyati ag'darilganligi e'lon qilingan?",
+        "options": "A) Rossiya\nB) Buyuk Britaniya\nC) Germaniya\nD) Fransiya",
+        "reasoning": "1870-yilda Fransiyaning ikkinchi imperatori Napoleon III urushda mag'lub bo'lganidan so'ng, imperator hokimiyati ag'darilgan va Respublika e'lon qilingan edi.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi ijodkor hukmdorlardan biriga jo'natgan maktubida adolatning qadrini ham, may ichmaslikning foydasini ham Muhammad payg'ambar (s.a.v.) ning so'zlari bilan mustahkamlab: «Bir soatlik adolat ikki dunyo - insonlar va jinlar dunyosi ibodatidan yaxshiroqdir, chog'ir esa yaramasliklar onasidir, jami yomonliklar undan tug'iladi, barcha yaxshilik va yomonlik bu ikki narsa ichiga kiradi», - deya tushuntiradi?",
+        "options": "A) Ogahiy\nB) Nosiruddin Rabg'uziy\nC) Alisher Navoiy\nD) Imom al-Buxoriy",
+        "reasoning": "Ushbu ma'lumot Alisher Navoiyning \"Maktubot\" asariga kiritilgan xatlaridan olingan. Navoiy bu maktubda adolat va may ichmaslikni tushuntirib, Muhammad payg'ambar (s.a.v.)ning so'zlarini keltiradi.",
+        "answer_letter": "C"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

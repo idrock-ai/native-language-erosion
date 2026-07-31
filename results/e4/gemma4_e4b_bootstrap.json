@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Qaysi javobda nomi keltirilgan devon Navoiy qalamiga mansub emas?",
+        "options": "A) «Navodir ush-shabob»\nB) «Badoye ul-bidoya»\nC) «Saodat ul-iqbol»\nD) «Devoni Foni»",
+        "reasoning": "Navoiyning mashhur asarlari orasida \"Navodir ush-shabob\" va \"Badoye ul-bidoya\" kabi devonlar mavjud. \"Saodat ul-iqbol\" esa Navoiyga mansub emas, balki boshqa bir shoirga tegishli bo'lishi mumkin. \"Devoni Foni\" esa Navoiyning asarlari to'plamlaridan biri bo'lishi mumkin. Shu sababli, Navoiy qalamiga mansub emas deb taxmin qilinadigan javob C hisoblanadi.",
+        "answer_letter": "C"
+      },
+      {
+        "augmented": true,
+        "question": "Navoiyning qaysi g'azalida majoziy tasvir orqali ilohiy ishq kuylanib, dastlabki besh baytda boshdan oxir lirik qahramonning va'da berib, so'zida turmagan yorni kuta-kuta chekkan iztiroblari haqida so'z boradi, begona baytda esa ishqda undan ko'ra «avvalqadam» bo'lgan «tolibi sodiq», ya'ni pir izlayotgani bayon qilinadi?",
+        "options": "A) «Deyin» radifli\nB) «Kelmadi» radifli\nC) «Bo'ldum sanga» radifli\nD) «Qilg'il» radifli",
+        "reasoning": "Berilgan savol Navoiyning g'azallaridan birini aniqlashni talab qiladi. Ushbu g'azalning mazmuni: 1) majoziy tasvir orqali ilohiy ishq kuylanishi, 2) dastlabki besh baytida lirik qahramonning va'da berib, so'zida turmagan yorni kuta-kuta chekkan iztiroblari haqida so'z borligi, va 3) begona baytda esa ishqda undan ko'ra «avvalqadam» bo'lgan «tolibi sodiq», ya'ni pir izlayotgani bayon qilinishi kerak. Bu tavsiflar Navoiyning \"Kelmadi\" radifli g'azallariga mos keladi.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "So'z bilan ifodalangan har qanday fikr dunyoni harakatlan tiruvchi kuchdir. Ushbu gap haqida berilgan to'g'ri ma'lumotni aniqlang.",
+        "options": "A) Gapda hokim qismi kesim vazifasida kelgan aniqlovchili so'z birikmasi qatnashgan.\nB) Gapda hokim qismi qaratqich aniqlovchi vazifasida kelgan holli so'z birikmasi qatnashgan.\nC) Gapda hokim qismi to'ldiruvchi vazifasida kelgan aniqlovchili so'z birikmalari qatnashgan.\nD) Gapda hokim qismi to'ldiruvchi vazifasida kelgan to'ldiruvchili so'z birikmasi qatnashgan.",
+        "reasoning": "Berilgan gapni tahlil qilganda, \"So'z bilan ifodalangan har qanday fikr dunyoni harakatlantiruvchi kuchdir\" jumlasida hokim qismi \"fikr\" bo'lib, uning oldida kelgan \"So'z bilan ifodalangan har qanday\" qismi aniqlovchi vazifasida kelgan aniqlovchili so'z birikmasi hisoblanadi. Bu holat A variantida to'g'ri bayon qilingan.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi javobda Odil Yoqubovning qissalari berilgan?",
+        "options": "A) «Qanot juft bo'ladi», «Billur qandillar»\nB) «Yurak yonmog'i kerak», «Bir koshona sirlari»\nC) «Ko'hna dunyo», «Olma gullaganda»\nD) «Qadrdon dalalar», «Hukm»",
+        "reasoning": "Odil Yoqubovning mashhur qisolari orasida \"Qanot juft bo'ladi\" va \"Billur qandillar\" nomli asarlar mavjud. Bu javob eng to'g'ri va aniq ma'lumotga asoslangan.",
+        "answer_letter": "A"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

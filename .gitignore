@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+data/DTM_benchmark.json
+data/DTM2019_public.csv
+data/idrock-dtm2019-dataset.docx
+data/turkishmmlu.json
+docs/**/.DS_Store
+
+# Internal working files, not part of the released artifact.
+TODO.md
+docs/superpowers/

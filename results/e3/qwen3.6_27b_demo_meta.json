@@ -1,0 +1,66 @@
+{
+ "model": "qwen3.6:27b",
+ "pools": {
+  "reason/short": 52,
+  "reason/long": 11,
+  "native/short": 44,
+  "native/long": 0
+ },
+ "conditions": {
+  "cot": {
+   "n_demos": 0,
+   "demo_chars": [],
+   "demo_subjects": []
+  },
+  "reason_short": {
+   "n_demos": 4,
+   "demo_chars": [
+    245,
+    150,
+    168,
+    177
+   ],
+   "demo_subjects": [
+    "fizika",
+    "matematika",
+    "matematika",
+    "fizika"
+   ]
+  },
+  "reason_long": {
+   "n_demos": 4,
+   "demo_chars": [
+    484,
+    365,
+    886,
+    314
+   ],
+   "demo_subjects": [
+    "matematika",
+    "fizika",
+    "matematika",
+    "matematika"
+   ]
+  },
+  "native_short": {
+   "n_demos": 4,
+   "demo_chars": [
+    223,
+    173,
+    117,
+    175
+   ],
+   "demo_subjects": [
+    "tarix",
+    "tarix",
+    "tarix",
+    "tarix"
+   ]
+  },
+  "native_long": {
+   "n_demos": 0,
+   "demo_chars": [],
+   "demo_subjects": []
+  }
+ }
+}

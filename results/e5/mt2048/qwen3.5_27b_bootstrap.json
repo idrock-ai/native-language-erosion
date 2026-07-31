@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formula bilan berilgan ketma-ketlikning dastlabki yigirmata hadining o'rta arifmetigini toping.",
+        "options": "A) $16\\frac{3}{4}$\nB) $16\\frac{1}{4}$\nC) $14\\frac{1}{4}$\nD) $14\\frac{3}{4}$",
+        "reasoning": "Ketma-ketlikning dastlabki va oxirgi hadlarini topib, ularning o'rtacha qiymatini hisoblaymiz, chunki arifmetik progressiyada o'rta arifmetik birinchi va oxirgi hadlar yig'indisining yarmiga teng.\nBirinchi had $x_1 = 2.5$, yigirmata had $x_{20} = 31$, ularning o'rtacha qiymati $(2.5 + 31) / 2 = 16.75$ yoki $16\\frac{3}{4}$ ga teng.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "O'zgarmas tok manbayiga ulangan yassi kondensator berilgan. Uning qoplamalari orasidagi masofa 2 marta orttirilsa, kondensatorning energiyasi qanday o'zgaradi?",
+        "options": "A) 2 marta ortadi\nB) 2 marta kamayadi\nC) 4 marta kamayadi\nD) 4 marta ortadi",
+        "reasoning": "O'zgarmas tok manbayiga ulangan kondensatorda kuchlanish o'zgarmas bo'lib qoladi, masofa 2 marta ortganda sig'im 2 marta kamayadi va natijada energiya ham 2 marta kamayadi.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "$\\frac{\\sqrt{9-x^{2}}}{2x+5}=\\frac{\\sqrt{9-x^{2}}}{x-5}$ tenglama nechta haqiqiy ildizga ega?",
+        "options": "A) 4\nB) 3\nC) 0\nD) 2",
+        "reasoning": "Tenglamani soddalashtirish uchun $\\sqrt{9-x^2}$ ni umumiy ko'paytuvchi sifatida ajratib olamiz, bu yerda $x^2 \\le 9$ shartini inobatga olish kerak. Agar $\\sqrt{9-x^2} \\neq 0$ bo'lsa, kasrlarni qisqartirib $2x+5 = x-5$ hosil qilamiz, bu esa $x=-10$ beradi, lekin bu qiymat $[-3, 3]$ oralig'iga kirmaydi. Agar $\\sqrt{9-x^2} = 0$ bo'lsa, $x=\\pm 3$ bo'ladi va bu qiymatlar ma'qul, chunki maxrajlar noldan farqli. Shunday qilib, faqat 2 ta haqiqiy ildiz mavjud.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Quyidagi janglar bo'lib o'tgan yillariga qarab to'g'ri xronologik tartibda joylashtirilgan javobni belgilang.\n1) «Xalqlar jangi»; 2) Borodino jangi;\n3) Vaterloo jangi.",
+        "options": "A) 1, 3, 2\nB) 2, 3, 1\nC) 2, 1, 3\nD) 1, 2, 3",
+        "reasoning": "Borodino jangi 1812-yilda, «Xalqlar jangi» 1813-yilda, Vaterloo jangi esa 1815-yilda bo'lib o'tgan. Shuning uchun to'g'ri tartib 2, 1, 3 bo'ladi.",
+        "answer_letter": "C"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

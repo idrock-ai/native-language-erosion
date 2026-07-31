@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "  $\\(\\mathrm{\\int \\dfrac{2-\\sqrt[3] {x}}{2+\\sqrt[3] {x}}\\ dx}\\)$     integralinde   $\\(\\mathrm{\\sqrt[3] {x}=u} \\)$    dönüşümü yapılarak aşağıdaki integrallerden hangisi elde edilir?                                ",
+        "options": "A) $\\(\\mathrm{\\int \\dfrac{2+u}{2-u}\\ du} \\)$\nB) $\\(\\mathrm{\\int \\dfrac{6u^{2}-3u^{3}}{2+u}\\ du} \\)$\nC) $\\(\\mathrm{\\int \\dfrac{3u^{2}-u^{3}}{2+u}\\ du}\\)$\nD) $\\(\\mathrm{\\int \\dfrac{2-u}{2+u}\\ du}\\)$\nE) $\\(\\mathrm{\\int \\dfrac{2u+u^{2}}{2-u}\\ du} \\)$",
+        "reasoning": "$x = u^3$ dönüşümü yapıldığında $dx = 3u^2 du$ olur ve payda $2+u$ şeklinde sadeleşir. Payda $2-u$ yerine $2+u$ gelir ve $dx$ terimi paya eklenerek $3u^2$ çarpanı oluşur.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "Türgişler, Emevilerle yaptıkları uzun savaşlar sonrasında Arapları yenmişler ve İslamiyet'in Orta Asya'ya yayılmasını engellemişlerdir. Buna göre aşağıdaki yargılardan hangisine ulaşılamaz?",
+        "options": "A) Orta Asya'nın Araplaşması engellenmiştir.\nB) İslamiyet'in doğuda yayılışı bir süreliğine durmuştur.\nC) Emevilerden askerî alanda üstündürler.\nD) Türgişler, Türk kültürünün korunmasında etkili olmuşlardır.\nE) Türkler İslamiyet'in koruyuculuğunu üstlenmişlerdir.",
+        "reasoning": "Verilen bilgiye göre Türkler İslamiyet'in doğuya yayılmasını engelleyerek Türk kültürünün korunmasında etkili olmuşlardır. Ancak bu durum Türklerin İslamiyet'in koruyuculuğunu üstlendiğini (yani İslam'ı benimseyip yaydırmayı sürdürdüğünü) göstermez; aksine yayılımı durdurduğunu gösterir. Bu nedenle E seçeneği ile ulaşılamaz.",
+        "answer_letter": "E"
+      },
+      {
+        "augmented": true,
+        "question": "Aşağıda  metinlerle ilgili verilen bilgilerden hangisi yanlıştır?",
+        "options": "A) Sanatsal metinlerde sözcükler yan ve mecaz anlamlarıyla kullanılır.\nB) Göstermeye bağlı metinler monolog ve diyaloglardan oluşur.\nC) Göstermeye bağlı metinler sahnelenmek üzere yazılır.\nD) Sanatsal metinlerde üslup önemlidir.\nE) Öğretici metinlerin yapısı zaman, mekân, olay örgüsü ve kişi unsurları üzerine kurulur.",
+        "reasoning": "E seçeneği, öğretici metinlerin yapısının zaman, mekan, olay örgüsü ve kişi unsurları üzerine kurulduğunu belirtir; ancak bu unsurların temel özellikleri genellikle \"sanatsal metinlerde\" (özellikle hikaye anlatıcısında) daha belirgin ve detaylı bir şekilde işlenir. Öğretici metinlerin yapısı daha çok bilgi aktarımına yönelik, bu nedenle bu tanımlama sanatsal metinlerin özelliklerine daha uygundur. Diğer seçenekler (A, B, C, D) göstermeye bağlı metinlerin ve sanatsal metinlerin genel özelliklerini doğru bir şekilde ifade eder.",
+        "answer_letter": "E"
+      },
+      {
+        "augmented": true,
+        "question": "Ses dalgası havadan daha yoğun bir ortama girerken,  \r\nI.   Hız  \r\nII.  Şiddet  \r\nIII. Yükseklik  \n niceliklerinden hangileri değişmez?  ",
+        "options": "A) Yalnız III\nB) Yalnız I\nC) I, II ve III\nD) Yalnız II\nE) I ve II",
+        "reasoning": "Ses dalgası farklı ortamlar arasında geçerken frekansı (ve dolayısıyla periyodu) değişmez; frekans kaynağa bağlıdır. Hız ve dalga boyu ise ortamın özelliklerine (yoğunluk, elastiklik vb.) göre değişir. Sıhlet (amplitüde) ise ortam sınırlarında yansıma ve kırılma nedeniyle değişebilir. Bu nedenle değişmeyen nicelik frekans ve periyottur. Ancak soruda verilen seçeneklerde \"Frekans\" veya \"Periyot\" bulunmamaktadır. Sorunun muhtemelen \"Ses dalgası havadan daha yoğun bir ortama girerken, I. Hız, II. Sıhlet, III. Dalga Boyu\" şeklinde yanlışlıkla \"Yükseklik\" olarak yazılmış olması veya sorunun kendisi hatalı olması ihtimali vardır. Standart fizik sorularında \"Hız değişir, Sıhlet değişebilir, Dalga Boyu değişir\" şeklinde geçer. Eğer soruda \"Yükseklik\" yerine \"Frekans\" veya \"Periyot\" olsaydı cevap \"Yalnız III\" (Frekans değişmez) olurdu. Mevcut seçeneklere bakıldığında, \"Yükseklik\" ses dalgası için tanımlı bir nicelik değildir, bu yüzden soru muhtemelen \"Dalga Boyu\" veya \"Frekans\" kastedilmiş ve \"Yükseklik\" yazım hatasıdır. Standart bir fizik sorusu olarak \"Hız değişir, Sıhlet değişebilir, Frekans değişmez\" ilkesine göre, değişmeyen olan \"Frekans\"tır. Seçeneklerdeki \"III. Yükseklik\" ifadesi muhtemelen \"III. Frekans\" veya \"III. Periyot\" olarak kastedilmiş olmalıdır. Bu varsayım altında değişmeyen III seçeneği doğru olur.",
+        "answer_letter": "A"
+      }
+    ],
+    "signature": {
+      "instructions": "Türkçe test sorusunu cevapla.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Çok kısa gerekçe, en fazla 2 cümle."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Sadece bir harf: A, B, C, D veya E."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

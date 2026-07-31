@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Kichikka ulug'lik ulug'dan bo'lar, Ulug'ga egilsa, kichik qut olar. Ushbu parcha haqidagi qaysi fikrlar to'g'ri emas? 1) vositali to'ldiruvchilar sifatlar bilan ifodalangan; 2) ot bilan ifodalangan ega qatnashgan; 3) otlashgan so'z bilan ifodalangan vositasiz to'ldiruvchi qatnashgan; 4) sifat bilan ifodalangan gap bo'laklari ushbu gapdagi so'z birikmalarida hokim qism vazifasini bajargan.",
+        "options": "A) 2, 3\nB) 1, 2\nC) 1, 4\nD) 3, 4",
+        "reasoning": "Gapda \"kichik\", \"ulug'\" so'zlari otlashgan sifatlar bo'lib, ular ega va to'ldiruvchi vazifasida kelgan. 3-fikrda \"vositasiz to'ldiruvchi\" aytilgan, ammo gapdagi to'ldiruvchilar vositali (kimdan/nimadan) shaklida.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formula bilan berilgan ketma-ketlikning dastlabki yigirmata hadining o'rta arifmetigini toping.",
+        "options": "A) $16\\frac{3}{4}$\nB) $16\\frac{1}{4}$\nC) $14\\frac{1}{4}$\nD) $14\\frac{3}{4}$",
+        "reasoning": "Ketma-ketlik arifmetik progressiya bo'lgani uchun o'rta arifmetik birinchi va yigirmanchi hadlar yig'indisining yarmi bilan teng: $(x_1 + x_{20})/2 = (2.5 + 31)/2 = 16.75$.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "Daues rejasi qachon qabul qilingan?",
+        "options": "A) 1930-yilda\nB) 1924-yilda\nC) 1918-yilda\nD) 1929-yilda",
+        "reasoning": "Daues rejasi Germaniyaning urushdan keyingi iqtisodiy holatini barqarorlashtirish uchun 1924-yilda qabul qilingan.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "O'zgarmas tok manbayiga ulangan yassi kondensator berilgan. Uning qoplamalari orasidagi masofa 2 marta orttirilsa, kondensatorning energiyasi qanday o'zgaradi?",
+        "options": "A) 2 marta ortadi\nB) 2 marta kamayadi\nC) 4 marta kamayadi\nD) 4 marta ortadi",
+        "reasoning": "Kondensator sig'imi masofaga teskari proporsional ($C = \\varepsilon \\varepsilon_0 S/d$). Kuchlanish o'zgarmas bo'lganda, energiya $W = \\frac{1}{2}CU$ formulasi bo'yicha sig'im kamayishi bilan 2 marta kamayadi.",
+        "answer_letter": "B"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

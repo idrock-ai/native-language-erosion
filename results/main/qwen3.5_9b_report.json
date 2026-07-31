@@ -1,0 +1,104 @@
+{
+  "model": "qwen3.5:9b",
+  "seed": 42,
+  "test_size": 251,
+  "max_tokens": 512,
+  "conditions": {
+    "baseline": {
+      "overall": 35.9,
+      "by_subject": {
+        "fizika": {
+          "total": 38,
+          "correct": 12,
+          "accuracy": 31.6
+        },
+        "matematika": {
+          "total": 38,
+          "correct": 17,
+          "accuracy": 44.7
+        },
+        "ona_tili": {
+          "total": 100,
+          "correct": 29,
+          "accuracy": 29.0
+        },
+        "tarix": {
+          "total": 75,
+          "correct": 32,
+          "accuracy": 42.7
+        }
+      },
+      "delta_vs_baseline": {
+        "fizika": 0.0,
+        "matematika": 0.0,
+        "ona_tili": 0.0,
+        "tarix": 0.0
+      },
+      "delta_overall": 0.0
+    },
+    "cot": {
+      "overall": 52.2,
+      "by_subject": {
+        "fizika": {
+          "total": 38,
+          "correct": 26,
+          "accuracy": 68.4
+        },
+        "matematika": {
+          "total": 38,
+          "correct": 28,
+          "accuracy": 73.7
+        },
+        "ona_tili": {
+          "total": 100,
+          "correct": 36,
+          "accuracy": 36.0
+        },
+        "tarix": {
+          "total": 75,
+          "correct": 41,
+          "accuracy": 54.7
+        }
+      },
+      "delta_vs_baseline": {
+        "fizika": 36.8,
+        "matematika": 29.0,
+        "ona_tili": 7.0,
+        "tarix": 12.0
+      },
+      "delta_overall": 16.3
+    },
+    "dspy_bootstrap": {
+      "overall": 48.2,
+      "by_subject": {
+        "fizika": {
+          "total": 38,
+          "correct": 31,
+          "accuracy": 81.6
+        },
+        "matematika": {
+          "total": 38,
+          "correct": 32,
+          "accuracy": 84.2
+        },
+        "ona_tili": {
+          "total": 100,
+          "correct": 27,
+          "accuracy": 27.0
+        },
+        "tarix": {
+          "total": 75,
+          "correct": 31,
+          "accuracy": 41.3
+        }
+      },
+      "delta_vs_baseline": {
+        "fizika": 50.0,
+        "matematika": 39.5,
+        "ona_tili": -2.0,
+        "tarix": -1.4
+      },
+      "delta_overall": 12.3
+    }
+  }
+}

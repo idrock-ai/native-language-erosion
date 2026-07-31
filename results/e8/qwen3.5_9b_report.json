@@ -1,0 +1,124 @@
+{
+ "model": "qwen3.5:9b",
+ "engine": "ollama",
+ "seed": 42,
+ "max_tokens": 512,
+ "optimizer": "MIPROv2",
+ "search": {
+  "num_candidates": 5,
+  "num_trials": 10,
+  "minibatch_size": 25,
+  "val_size": 100
+ },
+ "conditions": {
+  "cot": {
+   "deployment": {
+    "overall": 52.2,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 26,
+      "accuracy": 68.4
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 28,
+      "accuracy": 73.7
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 36,
+      "accuracy": 36.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 41,
+      "accuracy": 54.7
+     }
+    }
+   },
+   "rescue": {
+    "overall": 53.0,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 27,
+      "accuracy": 71.1
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 28,
+      "accuracy": 73.7
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 36,
+      "accuracy": 36.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 42,
+      "accuracy": 56.0
+     }
+    }
+   }
+  },
+  "dspy_mipro": {
+   "deployment": {
+    "overall": 48.2,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 22,
+      "accuracy": 57.9
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 29,
+      "accuracy": 76.3
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 34,
+      "accuracy": 34.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 36,
+      "accuracy": 48.0
+     }
+    }
+   },
+   "rescue": {
+    "overall": 48.6,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 23,
+      "accuracy": 60.5
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 29,
+      "accuracy": 76.3
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 34,
+      "accuracy": 34.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 36,
+      "accuracy": 48.0
+     }
+    }
+   }
+  }
+ },
+ "mipro_program": {
+  "n_demos": 0,
+  "demo_payload_chars": 0,
+  "instructions": "Savolga javob berish uchun quyidagi bosqichlarni bajaring:\n1. O'zbek tilidagi test savolini va berilgan javob variantlarini tahlil qiling.\n2. Muammoni hal qilish uchun juda qisqa (maksimal 2 gapdan iborat) mantiyali mulohaza yozing. Mulohozada savolning mazmunini qisqacha tushuntiring va to'g'ri variantni tanlash sababini keltiring.\n3. Oxirida faqat bitta katta harf (A, B, C yoki D) ko'rsatib, to'g'ri javob variantini aniqlang.\nChiqish formati: \"Reasoning: [Mulohaza]\\nAnswer Letter: [Harf]"
+ }
+}

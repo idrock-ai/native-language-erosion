@@ -1,0 +1,44 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Rossiyada 1905-yilda qabul qilingan saylov to'g'risidagi qonun imperator Nikolay II tomonidan nechanchi yilda bekor qilingan?",
+        "options": "A) 1908-yilda\nB) 1906-yilda\nC) 1907-yilda\nD) 1909-yilda",
+        "reasoning": "1905-yilgi saylov qonuni 1907-yil 3-mayda Nikolay II tomonidan bekor qilingan. Bu voqea tarixda \"3-may to'ntarilishi\" deb ham ataladi.",
+        "answer_letter": "C"
+      }
+    ],
+    "signature": {
+      "instructions": "Sizga O'zbekiston standartlashtirilgan imtihonlaridan olingan test savoli va variantlar taqdim etilgan. Quyidagi qadamlarni bajaring:\n\n1. **Mulohaza (Reasoning):** Savolni hal qilish uchun juda qisqa va aniq mantiqiy tahlil yozing. Bu tahlil ko'pi bilan 2 gapdan iborat bo'lishi kerak. Kerak bo'lsa, matematik formulalarni qisqacha ko'rsatishingiz mumkin, lekin tushuntirishni qisqa saqlang.\n2. **Javob (Answer Letter):** To'g'ri variantni ifodalovchi harfni (A, B, C yoki D) yozing.\n\nChiqish formati qat'iy quyidagicha bo'lishi shart:\nReasoning: [Qisqa tahlil]\nAnswer Letter: [Harf]",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

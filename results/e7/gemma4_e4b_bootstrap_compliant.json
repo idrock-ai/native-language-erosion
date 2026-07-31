@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Edebiyat sahnesine iddialı bir giriş yapıp çok şeyler başarmayı amaçlamışlar fakat dönemin şartları gereği düşündüklerini hayata geçiremeden kısa sürede dağılmışlardır. Sanat anlayışlarını da \"Sanat şahsi ve muhteremdir.\" ifadesiyle ortaya koymuşlardır. Bu parçada bazı özellikleri verilen edebî topluluk aşağıdakilerden hangisidir?",
+        "options": "A) Beş Hececiler\nB) Tanzimat edebiyatı\nC) Fecriati\nD) Millî edebiyat\nE) Yedi Meşaleciler",
+        "reasoning": "Verilen özellikler (iddialı giriş, dönem şartları nedeniyle dağılma, \"Sanat şahsi ve muhteremdir\" anlayışı) Fecr-i Ati dönemindeki edebi toplulukları işaret etmektedir. Bu anlayış, özellikle şairlerin bireysel ve sanatsal kimliklerini ön plana çıkardığı bir dönemi yansıtır.",
+        "answer_letter": "C"
+      },
+      {
+        "augmented": true,
+        "question": "$\\(\\dfrac{3^{4}\\cdot 2^{5}+2^{4}\\cdot 3^{5}}{45}\\)$     işleminin sonucu aşağıdakilerden hangisidir?",
+        "options": "A) 108\nB) 216\nC) 180\nD) 144\nE) 120",
+        "reasoning": "Verilen ifadeyi ortak çarpan parantezine alarak sadeleştirelim: $2^4 \\cdot 3^4 (3^0 \\cdot 2^1 + 3^1 \\cdot 2^0) / 45 = 2^4 \\cdot 3^4 (2+3) / 45 = 16 \\cdot 81 \\cdot 5 / 45$. $45 = 9 \\cdot 5$ olduğundan, $\\frac{16 \\cdot 81 \\cdot 5}{9 \\cdot 5} = 16 \\cdot 9 = 144$'tür.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Bilinç akışı tekniği ile ilgili aşağıdaki bilgilerden hangisi  yanlıştır ?",
+        "options": "A) Kişilerin iç dünyaları üçüncü kişi ağzından verilir.\nB) Serbest çağrışım yoluyla bir düşünceden bir başka düşünceye atlanır.\nC) Kahraman anlatıcı ve bakış açısı söz konusudur.\nD) Cümleler arasında mantık ilişkisi çok gevşek ve zayıftır.\nE) XX. yüzyıl modern roman ve hikâyesinde kullanılmıştır.",
+        "reasoning": "Bilincin akışı tekniğinde cümleler arasında mantıksal bir bağlantı olmaması, düşüncelerin rastgele atlaması ve iç monolog kullanılması temel özelliklerdir. Ancak, bu teknik genellikle birinci tekil şahıs ağzından (kahramanın kendi iç dünyası) verilir, üçüncü şahıs ağzından değil.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "Aşağıda  metinlerle ilgili verilen bilgilerden hangisi yanlıştır?",
+        "options": "A) Sanatsal metinlerde sözcükler yan ve mecaz anlamlarıyla kullanılır.\nB) Göstermeye bağlı metinler monolog ve diyaloglardan oluşur.\nC) Göstermeye bağlı metinler sahnelenmek üzere yazılır.\nD) Sanatsal metinlerde üslup önemlidir.\nE) Öğretici metinlerin yapısı zaman, mekân, olay örgüsü ve kişi unsurları üzerine kurulur.",
+        "reasoning": "Öğretici metinler bilgi verme amacı taşır ve genellikle olay örgüsü, zaman, mekan gibi unsurlarla kurulmaz; bu unsurlar daha çok kurgusal (sanatsal) metinlerde bulunur. Bu nedenle E seçeneği yanlıştır.",
+        "answer_letter": "E"
+      }
+    ],
+    "signature": {
+      "instructions": "Türkçe test sorusunu cevapla.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Çok kısa gerekçe, en fazla 2 cümle."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Sadece bir harf: A, B, C, D veya E."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

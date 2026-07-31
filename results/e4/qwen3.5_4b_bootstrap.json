@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "So'z bilan ifodalangan har qanday fikr dunyoni harakatlan tiruvchi kuchdir. Ushbu gap haqida berilgan to'g'ri ma'lumotni aniqlang.",
+        "options": "A) Gapda hokim qismi kesim vazifasida kelgan aniqlovchili so'z birikmasi qatnashgan.\nB) Gapda hokim qismi qaratqich aniqlovchi vazifasida kelgan holli so'z birikmasi qatnashgan.\nC) Gapda hokim qismi to'ldiruvchi vazifasida kelgan aniqlovchili so'z birikmalari qatnashgan.\nD) Gapda hokim qismi to'ldiruvchi vazifasida kelgan to'ldiruvchili so'z birikmasi qatnashgan.",
+        "reasoning": "Bu gapda \"fikr\" so'zi hokim qismi bo'lib, uning atrofida \"har qanday\" so'zi aniqlovchi vazifada keladi. \"Har qanday\" so'zi aniqlovchili so'z birikmasiga kiradi va u hokim qismiga to'g'ridan-to'g'ri bog'lanadi, ya'ni u to'ldiruvchi vazifada emas, balki aniqlovchi vazifada ishlatilgan. Shuning uchun, gapda hokim qismi aniqlovchili so'z birikmasiga bog'langan.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi gapda sodda yasama holat ravishi ishtirok etgan?",
+        "options": "A) Ular asta-sekin ko'zdan olislab borishardi, biz esa ularni kuzatib qoldik.\nB) Dushman bilan tortishayotganingizda ham mardlarcha fikr bildiring.\nC) Olmaxon yerdan ko'ra daraxtda yanada tezroq yuguradi.\nD) Kemtik oy cho'qqilar orasidan mo'ralaydi, Jamila esa oyga termilib zavqlanardi.",
+        "reasoning": "Soddalashtirilgan yozuvda \"mo'ralaydi\" va \"termilib zavqlanardi\" kabi so'zlar sodda yasama holatning o'ziga xos belgisidir.\nB variantda sodda yasama holat ishtirok etgan.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi javobdagi ma'lumot Erkin Vohidov haqida emas?",
+        "options": "A) U «Oltin devor», «Istanbul fojiasi» kabi dramalar muallifidir.\nB) O'n yoshga yetar-yetmas ham ota, ham onadan ajrab qolgan yosh shoirni tog'asi o'z tarbiyasiga oladi.\nC) Uning el-yurt va adabiyot oldidagi xizmatlari inobatga olinib, «O'zbekiston Qahramoni» unvoni bilan taqdirlangan.\nD) U Dantening «Ilohiy komediya»sini o'zbek tiliga o'girgan.",
+        "reasoning": "Erkin Vohidov o'zbek adabiyotida mashhur dramaturg va shoir bo'lib, Dantening asarini o'zbek tiliga o'girgan bo'lmagan.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi gapda aniqlovchi vazifasidagi so'zda paronim bilan bog'liq xatolik bor?",
+        "options": "A) Uning qalbidagi bu bo'shliq o'rnini hech narsa to'ldira olmas edi.\nB) Sinfimizning ahl va inoq o'quvchilari bugungi bellashuvda ham yutib chiqdi.\nC) Ichkariga kirishganda hushsiz yotgan bir kishini ko'rishdi.\nD) Tongda ruhsiz ko'z ochaman, Qovurilar tanda jon.",
+        "reasoning": "B variantida \"ahl\" so'zi \"aniqlovchi\" vazifasida bo'lib, u \"inoq\" so'zining paronimi bo'lgani uchun bu xatolikni anglatadi.",
+        "answer_letter": "B"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

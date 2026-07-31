@@ -1,0 +1,117 @@
+{
+ "dir": "results/e8",
+ "native": "ona_tili",
+ "contrast": "cot -> dspy_mipro",
+ "n_models": 4,
+ "n_items": 251,
+ "excluded_models": [
+  "gemma4:31b",
+  "qwen3.5:27b"
+ ],
+ "per_model": {
+  "gemma4:e4b": {
+   "native_lost": 12,
+   "native_gained": 15,
+   "other_lost": 11,
+   "other_gained": 19,
+   "discordant_pairs": 57,
+   "native_harm_share": 44.4,
+   "other_harm_share": 36.7,
+   "odds_ratio": 1.38
+  },
+  "qwen3.5:4b": {
+   "native_lost": 15,
+   "native_gained": 6,
+   "other_lost": 18,
+   "other_gained": 29,
+   "discordant_pairs": 68,
+   "native_harm_share": 71.4,
+   "other_harm_share": 38.3,
+   "odds_ratio": 4.03
+  },
+  "qwen3.5:9b": {
+   "native_lost": 10,
+   "native_gained": 8,
+   "other_lost": 18,
+   "other_gained": 10,
+   "discordant_pairs": 46,
+   "native_harm_share": 55.6,
+   "other_harm_share": 64.3,
+   "odds_ratio": 0.69
+  },
+  "qwen3.6:27b": {
+   "native_lost": 10,
+   "native_gained": 8,
+   "other_lost": 11,
+   "other_gained": 19,
+   "discordant_pairs": 48,
+   "native_harm_share": 55.6,
+   "other_harm_share": 36.7,
+   "odds_ratio": 2.16
+  }
+ },
+ "preregistered": false,
+ "n_informative": 4,
+ "uninformative_models": [],
+ "pooled": {
+  "native_lost": 47,
+  "native_gained": 37,
+  "other_lost": 58,
+  "other_gained": 77,
+  "fisher_p_unclustered": 0.07111
+ },
+ "mh_odds_ratio": 1.75,
+ "bootstrap": {
+  "n": 4000,
+  "seed": 42,
+  "ci95": [
+   0.989,
+   3.141
+  ],
+  "p_or_le_1": 0.0285
+ },
+ "models_agreeing": 3,
+ "models_comparable": 4,
+ "untreated_models": {
+  "gemma4:31b": "instruction unchanged and zero demonstrations",
+  "qwen3.5:27b": "instruction unchanged and zero demonstrations"
+ },
+ "programs": [
+  {
+   "model": "gemma4:31b",
+   "n_demos": 0,
+   "payload_chars": 0,
+   "instruction_changed": false
+  },
+  {
+   "model": "gemma4:e4b",
+   "n_demos": 4,
+   "payload_chars": 4790,
+   "instruction_changed": true
+  },
+  {
+   "model": "qwen3.5:27b",
+   "n_demos": 0,
+   "payload_chars": 0,
+   "instruction_changed": false
+  },
+  {
+   "model": "qwen3.5:4b",
+   "n_demos": 1,
+   "payload_chars": 700,
+   "instruction_changed": true
+  },
+  {
+   "model": "qwen3.5:9b",
+   "n_demos": 0,
+   "payload_chars": 0,
+   "instruction_changed": true
+  },
+  {
+   "model": "qwen3.6:27b",
+   "n_demos": 1,
+   "payload_chars": 444,
+   "instruction_changed": true
+  }
+ ]
+}

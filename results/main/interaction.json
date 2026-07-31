@@ -1,0 +1,82 @@
+{
+ "dir": "results/main",
+ "native": "ona_tili",
+ "n_models": 6,
+ "n_items": 251,
+ "per_model": {
+  "gemma4_31b": {
+   "native_lost": 8,
+   "native_gained": 5,
+   "other_lost": 5,
+   "other_gained": 8,
+   "native_harm_share": 61.5,
+   "other_harm_share": 38.5,
+   "odds_ratio": 2.56
+  },
+  "gemma4_e4b": {
+   "native_lost": 13,
+   "native_gained": 5,
+   "other_lost": 17,
+   "other_gained": 13,
+   "native_harm_share": 72.2,
+   "other_harm_share": 56.7,
+   "odds_ratio": 1.99
+  },
+  "qwen3.5_27b": {
+   "native_lost": 9,
+   "native_gained": 9,
+   "other_lost": 7,
+   "other_gained": 6,
+   "native_harm_share": 50.0,
+   "other_harm_share": 53.8,
+   "odds_ratio": 0.86
+  },
+  "qwen3.5_4b": {
+   "native_lost": 16,
+   "native_gained": 11,
+   "other_lost": 14,
+   "other_gained": 25,
+   "native_harm_share": 59.3,
+   "other_harm_share": 35.9,
+   "odds_ratio": 2.6
+  },
+  "qwen3.5_9b": {
+   "native_lost": 20,
+   "native_gained": 11,
+   "other_lost": 19,
+   "other_gained": 18,
+   "native_harm_share": 64.5,
+   "other_harm_share": 51.4,
+   "odds_ratio": 1.72
+  },
+  "qwen3.6_27b": {
+   "native_lost": 9,
+   "native_gained": 5,
+   "other_lost": 4,
+   "other_gained": 24,
+   "native_harm_share": 64.3,
+   "other_harm_share": 14.3,
+   "odds_ratio": 10.8
+  }
+ },
+ "preregistered": false,
+ "pooled": {
+  "native_lost": 75,
+  "native_gained": 46,
+  "other_lost": 66,
+  "other_gained": 94,
+  "fisher_p_unclustered": 0.00072
+ },
+ "mh_odds_ratio": 2.275,
+ "bootstrap": {
+  "n": 4000,
+  "seed": 42,
+  "ci95": [
+   1.371,
+   3.909
+  ],
+  "p_or_le_1": 0.0005
+ },
+ "models_agreeing": 5,
+ "models_comparable": 6
+}

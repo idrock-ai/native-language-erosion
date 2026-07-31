@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Bir dalga leğeninde oluşturulan su dalgası için  \r\nI.   Leğenin derinliği aynı kalmak şartıyla dalganın frekansı artırılırsa dalga boyu azalır.  \r\nII.  Dalga kaynağının özellikleri değiştirilmeden suyun derinliği azaltılırsa dalga boyu azalır.  \r\nIII. Dalganın genliği artırılırsa dalganın enerjisi artar.  \n ifadelerinden hangileri doğrudur?",
+        "options": "A) I ve II\nB) Yalnız I\nC) Yalnız II\nD) I, II ve III\nE) II ve III",
+        "reasoning": "Dalga hızı ($v$), frekans ($f$) ve dalga boyu ($\\lambda$) arasındaki ilişki $v = \\lambda f$'dir. Derinlik sabitken frekans artarsa, dalga boyu azalır (I doğru). Derinlik azalırsa, dalga hızı azalır ve dalga boyu da azalır (II doğru). Dalga enerjisi, genliğin karesiyle orantılıdır, dolayısıyla genlik artarsa enerji artar (III doğru).",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Edebiyat sahnesine iddialı bir giriş yapıp çok şeyler başarmayı amaçlamışlar fakat dönemin şartları gereği düşündüklerini hayata geçiremeden kısa sürede dağılmışlardır. Sanat anlayışlarını da \"Sanat şahsi ve muhteremdir.\" ifadesiyle ortaya koymuşlardır. Bu parçada bazı özellikleri verilen edebî topluluk aşağıdakilerden hangisidir?",
+        "options": "A) Beş Hececiler\nB) Tanzimat edebiyatı\nC) Fecriati\nD) Millî edebiyat\nE) Yedi Meşaleciler",
+        "reasoning": "Verilen özellikler (iddialı giriş, dönem şartları nedeniyle dağılma, \"Sanat şahsi ve muhteremdir\" anlayışı) Fecr-i Ati dönemindeki edebi toplulukları işaret etmektedir. Bu anlayış, özellikle şairlerin bireysel ve sanatsal kimliklerini ön plana çıkardığı bir dönemi yansıtır.",
+        "answer_letter": "C"
+      },
+      {
+        "augmented": true,
+        "question": "Türgişler, Emevilerle yaptıkları uzun savaşlar sonrasında Arapları yenmişler ve İslamiyet'in Orta Asya'ya yayılmasını engellemişlerdir. Buna göre aşağıdaki yargılardan hangisine ulaşılamaz?",
+        "options": "A) Orta Asya'nın Araplaşması engellenmiştir.\nB) İslamiyet'in doğuda yayılışı bir süreliğine durmuştur.\nC) Emevilerden askerî alanda üstündürler.\nD) Türgişler, Türk kültürünün korunmasında etkili olmuşlardır.\nE) Türkler İslamiyet'in koruyuculuğunu üstlenmişlerdir.",
+        "reasoning": "Verilen bilgi, Türgişlerin Emevileri yenerek İslamiyet'in Orta Asya'ya yayılmasını engellediğini belirtiyor. Bu durum, İslamiyet'in doğuda yayılışının bir süre durmasına (B) ve Orta Asya'nın Araplaşmasının engellenmesine (A) işaret eder. Ancak, Türgişlerin İslamiyet'in koruyuculuğunu üstlendiğine dair doğrudan bir bilgi verilmemiştir; bu, bir çıkarım olabilir ancak kesin olarak ulaşılamaz.",
+        "answer_letter": "E"
+      },
+      {
+        "augmented": true,
+        "question": "$\\(\\dfrac{3^{4}\\cdot 2^{5}+2^{4}\\cdot 3^{5}}{45}\\)$     işleminin sonucu aşağıdakilerden hangisidir?",
+        "options": "A) 108\nB) 216\nC) 180\nD) 144\nE) 120",
+        "reasoning": "Verilen ifadeyi ortak çarpan parantezine alarak sadeleştirelim: $2^4 \\cdot 3^4 (3^0 \\cdot 2^1 + 3^1 \\cdot 2^0) / 45 = 2^4 \\cdot 3^4 (2+3) / 45 = 16 \\cdot 81 \\cdot 5 / 45$. $45 = 9 \\cdot 5$ olduğundan, $\\frac{16 \\cdot 81 \\cdot 5}{9 \\cdot 5} = 16 \\cdot 9 = 144$'tür.",
+        "answer_letter": "D"
+      }
+    ],
+    "signature": {
+      "instructions": "Türkçe test sorusunu cevapla.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Çok kısa gerekçe, en fazla 2 cümle."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Sadece bir harf: A, B, C, D veya E."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

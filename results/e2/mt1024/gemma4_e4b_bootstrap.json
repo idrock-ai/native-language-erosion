@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formula bilan berilgan ketma-ketlikning dastlabki yigirmata hadining o'rta arifmetigini toping.",
+        "options": "A) $16\\frac{3}{4}$\nB) $16\\frac{1}{4}$\nC) $14\\frac{1}{4}$\nD) $14\\frac{3}{4}$",
+        "reasoning": "Berilgan ketma-ketlikning umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formulasiga ega. Dastlabki $N$ hadining o'rta arifmetik qiymati $\\frac{x_1 + x_N}{2}$ formulasi bilan topiladi. Bu yerda $N=20$ va $n$ indeksi 1 dan boshlanadi.\n$x_1 = \\frac{3(1)}{2} + 1 = \\frac{3}{2} + 1 = \\frac{3+2}{2} = \\frac{5}{2} = 2\\frac{1}{2}$.\n$x_{20} = \\frac{3(20)}{2} + 1 = 30 + 1 = 31$.\nO'rta arifmetik qiymat: $\\frac{x_1 + x_{20}}{2} = \\frac{\\frac{5}{2} + 31}{2} = \\frac{\\frac{5}{2} + \\frac{62}{2}}{2} = \\frac{\\frac{67}{2}}{2} = \\frac{67}{4}$.\n$\\frac{67}{4} = 16$ butun va $\\frac{3}{4}$, ya'ni $16\\frac{3}{4}$.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "O'zgarmas tok manbayiga ulangan yassi kondensator berilgan. Uning qoplamalari orasidagi masofa 2 marta orttirilsa, kondensatorning energiyasi qanday o'zgaradi?",
+        "options": "A) 2 marta ortadi\nB) 2 marta kamayadi\nC) 4 marta kamayadi\nD) 4 marta ortadi",
+        "reasoning": "Kondensatorning quvvati $C$ va unga ulangan tok manbai (ya'ni, doira quvvati $U$) doimiy bo'lsa, kondensatorning saqlaydigan energiya $W = \\frac{1}{2} C U^2$ formulasi bilan beriladi. Kondensator quvvati $C$ masofaga $d$ bog'liq bo'lib, $C \\propto \\frac{1}{d}$ nisbatiga ega. Agar masofa 2 marta orttirilsa ($d' = 2d$), yangi quvvat $C' = \\frac{1}{2} C$ bo'ladi. Shu sababli, yangi energiya $W' = \\frac{1}{2} C' U^2 = \\frac{1}{2} (\\frac{1}{2} C) U^2 = \\frac{1}{2} W$ bo'ladi, ya'ni energiya 2 marta kamayadi.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "$\\frac{\\sqrt{9-x^{2}}}{2x+5}=\\frac{\\sqrt{9-x^{2}}}{x-5}$ tenglama nechta haqiqiy ildizga ega?",
+        "options": "A) 4\nB) 3\nC) 0\nD) 2",
+        "reasoning": "Berilgan tenglama $\\frac{\\sqrt{9-x^{2}}}{2x+5}=\\frac{\\sqrt{9-x^{2}}}{x-5}$ ko'paytma qismlarga ajratiladi. Birinchi navbatda, $\\sqrt{9-x^2}$ ning nolga teng bo'lishi mumkin bo'lgan holatlarni ko'rib chiqamiz. Agar $\\sqrt{9-x^2} \\neq 0$ bo'lsa, tenglamani $\\sqrt{9-x^2}$ ga bo'lish mumkin: $\\frac{1}{2x+5} = \\frac{1}{x-5}$, bu yerda $2x+5 \\neq 0$ va $x-5 \\neq 0$. Bu tenglikdan $x-5 = 2x+5$, ya'ni $-10 = x$ chiqadi. Tekshiramiz: $x=-10$ uchun $\\sqrt{9-(-10)^2} = \\sqrt{9-100} = \\sqrt{-91}$, bu haqiqiy son emas. Demak, bu holatda yechim yo'q.\n\nKeyingi holat $\\sqrt{9-x^2} = 0$ bo'lgan holatdir. Bu $9-x^2 = 0$, ya'ni $x^2 = 9$, demak $x=3$ yoki $x=-3$ bo'lsa sodir bo'ladi.\n1. $x=3$: Tenglamaning o'ng va chap tomonlari $\\frac{0}{2(3)+5} = \\frac{0}{11}$ va $\\frac{0}{3-5} = \\frac{0}{-2}$ ga teng bo'ladi. $0 = 0$ bo'lgani uchun $x=3$ ildizdir.\n2. $x=-3$: Tenglamaning o'ng va chap tomonlari $\\frac{0}{2(-3)+5} = \\frac{0}{-1}$ va $\\frac{0}{-3-5} = \\frac{0}{-8}$ ga teng bo'ladi. $0 = 0$ bo'lgani uchun $x=-3$ ildizdir.\n\nShuningdek, tenglamaning ma'lum bo'lishi uchun $2x+5 \\neq 0$ va $x-5 \\neq 0$ bo'lishi kerak. $x \\neq -5/2$ va $x \\neq 5$. Topilgan ildizlar $x=3$ va $x=-3$ bu shartlarni bajaradi.\nShunday qilib, tenglama ikkita haqiqiy ildizga ega: $x=3$ va $x=-3$.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "$x^{2}+a x=1$ tenglamaning $x_{1}$ va $x_{2}$ ildizlari $\\frac{x_{1}}{x_{2}}+\\frac{x_{2}}{x_{1}}=-18$ tenglikni qanoatlantirsa, $a^{2}-2$ ning qiymatini toping.",
+        "options": "A) 7\nB) 34\nC) 2\nD) 14",
+        "reasoning": "Berilgan tenglama $x^{2}+ax-1=0$ koeffitsientlar bo'yicha yig'indisi va ko'paytmasi bo'yicha quyidagilardan foydalanamiz: $x_1 + x_2 = -a$ va $x_1 x_2 = -1$.\nBerilgan shart $\\frac{x_{1}}{x_{2}}+\\frac{x_{2}}{x_{1}}=-18$ ni soddalashtiramiz: $\\frac{x_{1}^2 + x_{2}^2}{x_{1}x_{2}} = -18$.\n$x_{1}^2 + x_{2}^2 = (x_1 + x_2)^2 - 2x_1 x_2$ ni qo'yamiz: $\\frac{(x_1 + x_2)^2 - 2x_1 x_2}{x_1 x_2} = -18$.\nQiymatlarni qo'yamiz: $\\frac{(-a)^2 - 2(-1)}{-1} = -18$.\n$\\frac{a^2 + 2}{-1} = -18$, ya'ni $-(a^2 + 2) = -18$.\n$a^2 + 2 = 18$, shundan $a^2 = 16$.\nSo'nggi qiymatni topishimiz kerak: $a^2 - 2 = 16 - 2 = 14$.",
+        "answer_letter": "D"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

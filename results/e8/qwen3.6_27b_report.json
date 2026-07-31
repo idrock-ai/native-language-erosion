@@ -1,0 +1,124 @@
+{
+ "model": "qwen3.6:27b",
+ "engine": "ollama",
+ "seed": 42,
+ "max_tokens": 512,
+ "optimizer": "MIPROv2",
+ "search": {
+  "num_candidates": 5,
+  "num_trials": 10,
+  "minibatch_size": 25,
+  "val_size": 100
+ },
+ "conditions": {
+  "cot": {
+   "deployment": {
+    "overall": 51.8,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 25,
+      "accuracy": 65.8
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 27,
+      "accuracy": 71.1
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 34,
+      "accuracy": 34.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 44,
+      "accuracy": 58.7
+     }
+    }
+   },
+   "rescue": {
+    "overall": 52.2,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 25,
+      "accuracy": 65.8
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 27,
+      "accuracy": 71.1
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 35,
+      "accuracy": 35.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 44,
+      "accuracy": 58.7
+     }
+    }
+   }
+  },
+  "dspy_mipro": {
+   "deployment": {
+    "overall": 54.2,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 28,
+      "accuracy": 73.7
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 31,
+      "accuracy": 81.6
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 32,
+      "accuracy": 32.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 45,
+      "accuracy": 60.0
+     }
+    }
+   },
+   "rescue": {
+    "overall": 54.6,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 28,
+      "accuracy": 73.7
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 31,
+      "accuracy": 81.6
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 32,
+      "accuracy": 32.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 46,
+      "accuracy": 61.3
+     }
+    }
+   }
+  }
+ },
+ "mipro_program": {
+  "n_demos": 1,
+  "demo_payload_chars": 444,
+  "instructions": "Sizga O'zbekiston standartlashtirilgan imtihonlaridan olingan test savoli va variantlar taqdim etilgan. Quyidagi qadamlarni bajaring:\n\n1. **Mulohaza (Reasoning):** Savolni hal qilish uchun juda qisqa va aniq mantiqiy tahlil yozing. Bu tahlil ko'pi bilan 2 gapdan iborat bo'lishi kerak. Kerak bo'lsa, matematik formulalarni qisqacha ko'rsatishingiz mumkin, lekin tushuntirishni qisqa saqlang.\n2. **Javob (Answer Letter):** To'g'ri variantni ifodalovchi harfni (A, B, C yoki D) yozing.\n\nChiqish formati qat'iy quyidagicha bo'lishi shart:\nReasoning: [Qisqa tahlil]\nAnswer Letter: [Harf]"
+ }
+}

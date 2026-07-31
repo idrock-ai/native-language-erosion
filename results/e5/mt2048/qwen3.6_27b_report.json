@@ -1,0 +1,72 @@
+{
+ "model": "qwen3.6:27b",
+ "engine": "ollama",
+ "seed": 42,
+ "max_tokens": 2048,
+ "conditions": {
+  "cot": {
+   "deployment": {
+    "overall": 43.5,
+    "by_subject": {
+     "matematika": {
+      "total": 38,
+      "correct": 29,
+      "accuracy": 76.3
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 31,
+      "accuracy": 31.0
+     }
+    }
+   },
+   "rescue": {
+    "overall": 44.2,
+    "by_subject": {
+     "matematika": {
+      "total": 38,
+      "correct": 29,
+      "accuracy": 76.3
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 32,
+      "accuracy": 32.0
+     }
+    }
+   }
+  },
+  "dspy_bootstrap": {
+   "deployment": {
+    "overall": 49.3,
+    "by_subject": {
+     "matematika": {
+      "total": 38,
+      "correct": 32,
+      "accuracy": 84.2
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 36,
+      "accuracy": 36.0
+     }
+    }
+   },
+   "rescue": {
+    "overall": 49.3,
+    "by_subject": {
+     "matematika": {
+      "total": 38,
+      "correct": 32,
+      "accuracy": 84.2
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 36,
+      "accuracy": 36.0
+     }
+    }
+   }
+  }
+ }
+}

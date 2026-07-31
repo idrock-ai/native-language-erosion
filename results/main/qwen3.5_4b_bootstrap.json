@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Daues rejasi qachon qabul qilingan?",
+        "options": "A) 1930-yilda\nB) 1924-yilda\nC) 1918-yilda\nD) 1929-yilda",
+        "reasoning": "Daues rejasi 1924-yilda qabul qilingan.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "41; 39; 37; ...; 25; 23 sonlar arifmetik progressiyaning hadlari bo'lsa, $41^{2} - 39^{2} + 37^{2} - 35^{2} + ... + 25^{2} - 23^{2}$ ni hisoblang.",
+        "options": "A) 620\nB) 640\nC) 580\nD) 680",
+        "reasoning": "Berilgan ifodani to'g'ridan-to'g'ri hisoblash o'rniga, arifmetik progressiya xossasidan foydalanib, har bir juftlikni soddalashtirish maqsadga muvofiq. $n$-chi hadlar orqali ifodani yozib, umumiy formula hosil qilish orqali javobni topish mumkin.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "$a_1; a_2; a_3; ...; a_{n+1}; a_{n+2}$ arifmetik progressiyaning yig'indisi 390 ga teng. Agar $a_3 + a_n = 30$ bo'lsa, $\\frac{n+3}{9}$ ning qiymatini toping.",
+        "options": "A) 3\nB) $2\\frac{2}{3}$\nC) 2\nD) $3\\frac{1}{3}$",
+        "reasoning": "Arifmetik progressiyaning yig'indisi $S_{n+2} = \\frac{n+2}{2}(a_1 + a_{n+2})$ formula bilan hisoblanadi. $a_1 + a_{n+2} = a_3 + a_n$ tengligi o'rinli bo'lgani uchun, yig'indi 390 ga teng bo'lishi uchun $n+2=6$ (ya'ni $n=4$) bo'lishi kerak.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "3 ta turli lavozimga nomzodlari ko'rsatilgan 5 kishidan 3 kishini necha xil usul bilan saylash mumkin?",
+        "options": "A) 56\nB) 60\nC) 64\nD) 70",
+        "reasoning": "Bu masala kombinatsiya topishni talab qiladi, chunki lavozimlar turli va tartib muhim. 5 kishidan 3 tasini tanlash va ularni 3 ta turli lavozimga joylashtirish uchun $P(5,3)$ formuladan foydalanishimiz kerak, ya'ni $5 \\times 4 \\times 3 = 60$.",
+        "answer_letter": "B"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

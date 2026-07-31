@@ -1,0 +1,216 @@
+{
+ "model": "qwen3.6:27b",
+ "engine": "ollama",
+ "seed": 42,
+ "max_tokens": 512,
+ "conditions": {
+  "direct": {
+   "deployment": {
+    "overall": 51.0,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 22,
+      "accuracy": 57.9
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 25,
+      "accuracy": 65.8
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 37,
+      "accuracy": 37.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 44,
+      "accuracy": 58.7
+     }
+    }
+   },
+   "rescue": {
+    "overall": 51.0,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 22,
+      "accuracy": 57.9
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 25,
+      "accuracy": 65.8
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 37,
+      "accuracy": 37.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 44,
+      "accuracy": 58.7
+     }
+    }
+   }
+  },
+  "cot": {
+   "deployment": {
+    "overall": 51.8,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 25,
+      "accuracy": 65.8
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 27,
+      "accuracy": 71.1
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 34,
+      "accuracy": 34.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 44,
+      "accuracy": 58.7
+     }
+    }
+   },
+   "rescue": {
+    "overall": 52.2,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 25,
+      "accuracy": 65.8
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 27,
+      "accuracy": 71.1
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 35,
+      "accuracy": 35.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 44,
+      "accuracy": 58.7
+     }
+    }
+   }
+  },
+  "dspy_bootstrap": {
+   "deployment": {
+    "overall": 57.0,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 29,
+      "accuracy": 76.3
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 33,
+      "accuracy": 86.8
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 30,
+      "accuracy": 30.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 51,
+      "accuracy": 68.0
+     }
+    }
+   },
+   "rescue": {
+    "overall": 57.4,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 30,
+      "accuracy": 78.9
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 33,
+      "accuracy": 86.8
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 30,
+      "accuracy": 30.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 51,
+      "accuracy": 68.0
+     }
+    }
+   }
+  },
+  "dspy_bootstrap_compliant": {
+   "deployment": {
+    "overall": 57.0,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 29,
+      "accuracy": 76.3
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 33,
+      "accuracy": 86.8
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 30,
+      "accuracy": 30.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 51,
+      "accuracy": 68.0
+     }
+    }
+   },
+   "rescue": {
+    "overall": 57.4,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 30,
+      "accuracy": 78.9
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 33,
+      "accuracy": 86.8
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 30,
+      "accuracy": 30.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 51,
+      "accuracy": 68.0
+     }
+    }
+   }
+  }
+ }
+}

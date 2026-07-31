@@ -1,0 +1,124 @@
+{
+ "model": "qwen3.5:27b",
+ "engine": "ollama",
+ "seed": 42,
+ "max_tokens": 512,
+ "optimizer": "MIPROv2",
+ "search": {
+  "num_candidates": 5,
+  "num_trials": 10,
+  "minibatch_size": 25,
+  "val_size": 100
+ },
+ "conditions": {
+  "cot": {
+   "deployment": {
+    "overall": 53.4,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 27,
+      "accuracy": 71.1
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 31,
+      "accuracy": 81.6
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 31,
+      "accuracy": 31.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 45,
+      "accuracy": 60.0
+     }
+    }
+   },
+   "rescue": {
+    "overall": 53.4,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 27,
+      "accuracy": 71.1
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 31,
+      "accuracy": 81.6
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 31,
+      "accuracy": 31.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 45,
+      "accuracy": 60.0
+     }
+    }
+   }
+  },
+  "dspy_mipro": {
+   "deployment": {
+    "overall": 53.4,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 27,
+      "accuracy": 71.1
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 31,
+      "accuracy": 81.6
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 31,
+      "accuracy": 31.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 45,
+      "accuracy": 60.0
+     }
+    }
+   },
+   "rescue": {
+    "overall": 53.4,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 27,
+      "accuracy": 71.1
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 31,
+      "accuracy": 81.6
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 31,
+      "accuracy": 31.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 45,
+      "accuracy": 60.0
+     }
+    }
+   }
+  }
+ },
+ "mipro_program": {
+  "n_demos": 0,
+  "demo_payload_chars": 0,
+  "instructions": "O'zbek tilidagi test savoliga javob ber."
+ }
+}

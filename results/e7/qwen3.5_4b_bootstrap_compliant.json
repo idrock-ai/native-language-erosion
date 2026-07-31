@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "  $\\(\\mathrm{\\int \\dfrac{2-\\sqrt[3] {x}}{2+\\sqrt[3] {x}}\\ dx}\\)$     integralinde   $\\(\\mathrm{\\sqrt[3] {x}=u} \\)$    dönüşümü yapılarak aşağıdaki integrallerden hangisi elde edilir?                                ",
+        "options": "A) $\\(\\mathrm{\\int \\dfrac{2+u}{2-u}\\ du} \\)$\nB) $\\(\\mathrm{\\int \\dfrac{6u^{2}-3u^{3}}{2+u}\\ du} \\)$\nC) $\\(\\mathrm{\\int \\dfrac{3u^{2}-u^{3}}{2+u}\\ du}\\)$\nD) $\\(\\mathrm{\\int \\dfrac{2-u}{2+u}\\ du}\\)$\nE) $\\(\\mathrm{\\int \\dfrac{2u+u^{2}}{2-u}\\ du} \\)$",
+        "reasoning": "$x = u^3$ dönüşümü yapıldığında $dx = 3u^2 du$ olur ve payda $2+u$ şeklinde sadeleşir. Payda $2-u$ yerine $2+u$ gelir ve $dx$ terimi paya eklenerek $3u^2$ çarpanı oluşur.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "Isı yalıtımı iyi bir yapı inşa etmek hedefleniyor. Buna göre yapının duvar kalınlığı, pencerelerin boyutu ve duvarların yapıldığı malzemenin ısı iletkenlik katsayısı sırasıyla nasıl değiştirilmelidir?  ",
+        "options": "A) Azaltılmalı, arttırılmalı, arttırılmalı\nB) Arttırılmalı, azaltılmalı, azaltılmalı\nC) Arttırılmalı, arttırılmalı, arttırılmalı\nD) Arttırılmalı, azaltılmalı, arttırılmalı\nE) Azaltılmalı, azaltılmalı, azaltılmalı",
+        "reasoning": "Isı yalıtımını artırmak için duvar kalınlığı arttırılmalı, ısı yalıtımını sağlayan malzemenin ısı iletkenlik katsayısı azaltılmalı ve ısı kaybını önlemek için pencerelerin boyutu da azaltılmalıdır.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "Osmanlı Devleti'nin Balkan topraklarındaki varlığı 1353’te Çimpe Kalesi’nin alınmasıyla başlamış, tarihî süreç içerisinde Balkan topraklarının tamamı Osmanlı hâkimiyetine girmiş, XX. yüzyılın başlarına kadar bu hâkimiyet devam etmiştir. Osmanlı Devleti'nin Balkanlarda uyguladığı idari, dinî, ekonomik ve nüfus politikaları bu hâkimiyetin kalıcı hâle gelmesinde etkili olmuştur. Bu parçaya göre, aşağıdakilerden hangisi Osmanlı Devleti'nin Bal­kanlardaki varlığını XX. yüzyılın başlarına ka­dar sürdürmesini sağlayan etkenlerden biri değildir?",
+        "options": "A) Rumeli Beylerbeyliği’ni oluşturarak idari yapılanmayı güçlendirmesi\nB) İskân politikası ile Balkanlardaki Türk nüfusunu artırması\nC) Fethettiği bölgelere ticari imtiyaz hakkı tanıması\nD) Balkan uluslarına inanç özgürlüğü tanıması\nE) Uyguladığı adil yönetimden bölge halkının memnun kalması",
+        "reasoning": "Osmanlı Devleti, fethettiği bölgelerde ticari imtiyaz hakkı tanımamış; bunun yerine ticarette serbestiyet ilkesini benimsemiştir. Diğer seçenekler ise idari güçlendirmeyi, nüfus artışını, inanç özgürlüğünü ve adil yönetimi içeren Osmanlı'nın Balkanlarda uyguladığı gerçek politikalardır.",
+        "answer_letter": "C"
+      },
+      {
+        "augmented": true,
+        "question": "  Aşağıdaki yazı türlerinden hangisinde gözlem diğerlerine göre daha önemlidir?           ",
+        "options": "A) Tiyatro\nB) Gezi yazısı\nC) Mesnevi\nD) Günlük\nE) Biyografi",
+        "reasoning": "Gezi yazısı, yazarın kendi deneyimlerini ve gözlemlerini doğrudan anlatan bir tür olduğu için diğer yazı türlerine göre gözlem unsurunun daha önemi vardır.",
+        "answer_letter": "B"
+      }
+    ],
+    "signature": {
+      "instructions": "Türkçe test sorusunu cevapla.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Çok kısa gerekçe, en fazla 2 cümle."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Sadece bir harf: A, B, C, D veya E."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Eron tarixida bo'lib o'tgan voqealar to'g'ri xronologik tartibda berilgan javobni toping.\n1) Safaviylar davlati vujudga keldi;\n2) Qojarlar sulolasi hukmronligi o'rnatildi;\n3) Nodir Quli Eron shohi deb e'lon qilindi;\n4) Afg'onlar yetakchisi Mir Mahmud Eron shohi deb e'lon qilindi.",
+        "options": "A) 1, 4, 2, 3\nB) 3, 1, 4, 2\nC) 3, 2, 4, 1\nD) 1, 4, 3, 2",
+        "reasoning": "Safaviylar davlati 1501-yilda vujudga kelgan, keyin 1722-yilda Nodir Quli shoh bo'lgan, so'ngra 1729-yilda Afg'onlar hukmdori Mir Mahmud Eron shohi deb e'lon qilingan va oxirgi Qojarlar sulolasi 1794-yilda hukmronlikni o'rnatgan.",
+        "answer_letter": "D"
+      }
+    ],
+    "signature": {
+      "instructions": "Sizga O'zbek tilidagi test savolini yechish va to'g'ri javobni aniqlash uchun quyidagi ma'lumotlarni talqin qilishingiz kerak:\n\n1. **Masala tuzilishini tahlil qiling**: Savolni diqqat bilan o'qing va shartlar, sonlar va ifodalarni aniq ajratib olasizmi? Agar savol raqamlar, o'lchov birliklari (masalan, sm, cm, mm) yoki ilmiy terminlar (masalan, \"otos\", \"sifat\", \"vosita\") bilan bog'liq bo'lsa, buni e'tiborga oling.\n2. **Qoralar variantini saralash**: Berilgan variantlar (A, B, C, D) o'rtasida qaysi bittasi savolni to'g'ri aks ettiruvchi ekanligini aniqlang. Agar savolda xatoliklarni aniqlash so'ralmoqda yoki to'g'ri va noto'g'ri fikrlar o'rtasida tanlov qilish talab qilsa, har bir variantdagi har bir fikrni tekshiring.\n3. **Qisqa mantiqiy yondashuv yarat**: Javobingizni qo'llab quvvatlovchi mantiqiy tushuntirishni diqqatga oling, lekin uni juda qisqa tuzing. Tushuntirish o'rniga faqat asosiy mantiqiy bosqichlarni aytib o'ting (masalan, birinchi bosqichni hisoblash, keyingi bosqichni qo'llab-quvvatlash). Tushuntirish maksimal 2 ta guruhli gapdan iborat bo'lishi kerak.\n4. **Tugallash va tekshirish**: Tugagandan keyin, savol shartlariga muvofiq javobingiz to'g'ri ekanligiga ishonchingiz komil bo'lishi uchun bir marta tekshiring.\n\nJavobingizni quyidagicha formatda taqdimoting:",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formula bilan berilgan ketma-ketlikning dastlabki yigirmata hadining o'rta arifmetigini toping.",
+        "options": "A) $16\\frac{3}{4}$\nB) $16\\frac{1}{4}$\nC) $14\\frac{1}{4}$\nD) $14\\frac{3}{4}$",
+        "reasoning": "Ketma-ketlikning umumiy hadi $x_n = \\frac{3n}{2} + 1$ bo'lgani uchun, bu ketma-ketlik arifmetik ketma-ketlikdir. Arifmetik ketma-ketlikning dastlabki $n$ hadining o'rta arifmetigi $n$-chi hadga teng. Demak, biz $n=20$ bo'lgandagi hadni hisoblashimiz kerak: $x_{20} = \\frac{3 \\cdot 20}{2} + 1 = 30 + 1 = 31$. Lekin savol \"dastlabki yigirmata hadining o'rta arifmetigi\"ni so'rayapti. Arifmetik ketma-ketlikda dastlabki $n$ hadning o'rta arifmetigi $a_1$ va $a_n$ hadlari yig'indisining yarmi, ya'ni $\\frac{a_1 + a_n}{2}$ ga teng. $a_1 = 2.5$, $a_{20} = 31$. O'rta arifmetigi: $\\frac{2.5 + 31}{2} = \\frac{33.5}{2} = 16.75 = 16\\frac{3}{4}$.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "$x^{2}+a x=1$ tenglamaning $x_{1}$ va $x_{2}$ ildizlari $\\frac{x_{1}}{x_{2}}+\\frac{x_{2}}{x_{1}}=-18$ tenglikni qanoatlantirsa, $a^{2}-2$ ning qiymatini toping.",
+        "options": "A) 7\nB) 34\nC) 2\nD) 14",
+        "reasoning": "Tenglama $x^2 + ax - 1 = 0$ ko'rinishida bo'lib, Viyet teoremasiga ko'ra $x_1 x_2 = -1$ va $x_1 + x_2 = -a$. Berilgan shartni umumiy maxrajga keltirganda $\\frac{(x_1+x_2)^2 - 2x_1x_2}{x_1x_2} = -18$ hosil bo'ladi. Bu yerda $(-a)^2 - 2(-1) = -18(-1)$, ya'ni $a^2 + 2 = 18$, demak $a^2 = 16$. Kerakli ifoda $a^2 - 2 = 16 - 2 = 14$ ga teng.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Quyidagi janglar bo'lib o'tgan yillariga qarab to'g'ri xronologik tartibda joylashtirilgan javobni belgilang.\n1) «Xalqlar jangi»; 2) Borodino jangi;\n3) Vaterloo jangi.",
+        "options": "A) 1, 3, 2\nB) 2, 3, 1\nC) 2, 1, 3\nD) 1, 2, 3",
+        "reasoning": "Borodino jangi (1812-yil) «Xalqlar jangi» (1813-yil) dan oldin, «Xalqlar jangi» esa Vaterloo jangi (1815-yil) dan oldin bo'lib o'tgan.",
+        "answer_letter": "C"
+      },
+      {
+        "augmented": true,
+        "question": "1870-yilda quyidagi qaysi davlatda imperator hokimiyati ag'darilganligi e'lon qilingan?",
+        "options": "A) Rossiya\nB) Buyuk Britaniya\nC) Germaniya\nD) Fransiya",
+        "reasoning": "1870-yilda Fransiya-Prussiya urushi paytida Napoleon III hukmronligi tugagan va Ikkinchi Fransiya imperiyasi ag'darilgan.",
+        "answer_letter": "D"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

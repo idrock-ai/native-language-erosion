@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formula bilan berilgan ketma-ketlikning dastlabki yigirmata hadining o'rta arifmetigini toping.",
+        "options": "A) $16\\frac{3}{4}$\nB) $16\\frac{1}{4}$\nC) $14\\frac{1}{4}$\nD) $14\\frac{3}{4}$",
+        "reasoning": "Berilgan ketma-ketlikning umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formulasiga ega. Dastlabki $N$ hadining o'rta arifmetik qiymati $\\frac{x_1 + x_N}{2}$ formulasi bilan topiladi. Bu yerda $N=20$ va $n$ indeksi 1 dan boshlanadi.\n$x_1 = \\frac{3(1)}{2} + 1 = \\frac{3}{2} + 1 = \\frac{3+2}{2} = \\frac{5}{2} = 2\\frac{1}{2}$.\n$x_{20} = \\frac{3(20)}{2} + 1 = 30 + 1 = 31$.\nO'rta arifmetik qiymat: $\\frac{x_1 + x_{20}}{2} = \\frac{\\frac{5}{2} + 31}{2} = \\frac{\\frac{5}{2} + \\frac{62}{2}}{2} = \\frac{\\frac{67}{2}}{2} = \\frac{67}{4}$.\n$\\frac{67}{4} = 16$ va $\\frac{3}{4}$, ya'ni $16\\frac{3}{4}$.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "$x^{2}+a x=1$ tenglamaning $x_{1}$ va $x_{2}$ ildizlari $\\frac{x_{1}}{x_{2}}+\\frac{x_{2}}{x_{1}}=-18$ tenglikni qanoatlantirsa, $a^{2}-2$ ning qiymatini toping.",
+        "options": "A) 7\nB) 34\nC) 2\nD) 14",
+        "reasoning": "Berilgan tenglama $x^{2}+ax-1=0$ koeffitsientlar bo'yicha ildizlar teoremasi bo'yicha $x_1 x_2 = -1$ va $x_1 + x_2 = -a$ ga ega. Berilgan shart $\\frac{x_{1}}{x_{2}}+\\frac{x_{2}}{x_{1}}=-18$ ni soddalashtiramiz: $\\frac{x_{1}^2+x_{2}^2}{x_1 x_2} = -18$. $x_1^2+x_2^2 = (x_1+x_2)^2 - 2x_1x_2$ ni qo'yamiz: $\\frac{(x_1+x_2)^2 - 2x_1x_2}{x_1 x_2} = -18$. Qiymatlarni qo'ysak: $\\frac{(-a)^2 - 2(-1)}{-1} = -18$, ya'ni $\\frac{a^2 + 2}{-1} = -18$. Bu yerdan $a^2 + 2 = 18$ quyidagi natijani beradi: $a^2 = 16$. Savolda $a^2-2$ ning qiymati so'ralgan, shuning uchun $a^2-2 = 16-2 = 14$.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi javobdagi baytda tarse' she'riy san'at qo'llangan?",
+        "options": "A) Ikki mahbubni ko'rdum, bir-birisin ko'rmagan, Ikkisining o'rtasiga, do'stlar, qil ham sig'magan.\nB) Sendek menga bir yori jafokor topilmas, Mendek senga bir zori vafodor topilmas\nC) Hech kim mendek, ilohi, yoridin ayrulmasun, Mehribon munis o'shal dildoridin ayrilmasin.\nD) Har nechakim sabr ta'mirini bunyod ayladim, Ashk selobida vayron o'ldi obodim, eshit.",
+        "reasoning": "Tarse' she'riy san'ati (paralelizm) bir baytning ikki yarim qismida (yarmig'larda) bir-biriga o'xshash ma'no, grammatik yoki ritmik jihatlar bo'lishidir. A va B baytlari bu san'atga yaqinroq namuna ko'rsatadi. Ayniqsa, A baytida \"Ikki mahbubni ko'rdum, bir-birisin ko'rmagan\" va \"Ikkisining o'rtasiga, do'stlar, qil ham sig'magan\" qismlari orasida biror taqqoslash yoki o'xshashlikni ko'rsatishga urinish bor, ammo eng aniq va klassik tarse' namuna B baytida ko'rinadi: \"Sendek menga bir yori jafokor topilmas, Mendek senga bir zori vafodor topilmas\". Bu yerda \"Sendek... topilmas\" va \"Mendek... topilmas\" tuzilishi takrorlanib, taqqoslash (paralelizm) yaratilgan.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "41; 39; 37; ...; 25; 23 sonlar arifmetik progressiyaning hadlari bo'lsa, $41^{2} - 39^{2} + 37^{2} - 35^{2} + ... + 25^{2} - 23^{2}$ ni hisoblang.",
+        "options": "A) 620\nB) 640\nC) 580\nD) 680",
+        "reasoning": "Berilgan ifoda $\\sum_{k=1}^{n} (a_{2k-1}^2 - a_{2k+1}^2)$ ko'rinishida yozilishi mumkin. Bu yerda sonlar $41, 39, 37, \\dots, 23$ arifmetik progressiyaning hadlari. Har bir juft had uchun $(a^2 - b^2) = (a-b)(a+b)$ formulasi yordamida soddalashtiriladi.\n$41^2 - 39^2 = (41-39)(41+39) = 2 \\cdot 80 = 160$.\n$37^2 - 35^2 = (37-35)(37+35) = 2 \\cdot 72 = 144$.\n...\nOxirgi juft had: $25^2 - 23^2 = (25-23)(25+23) = 2 \\cdot 48 = 96$.\nBu yerda $n$ juft had bor. Birinchi had $41$ va oxirgi had $23$. Hadlar $41, 39, \\dots, 23$ bo'lib, bu $a_1 = 41$ va $a_m = 23$ bilan belgilanadi. $a_m = a_1 + (m-1)d$, bunda $d = -2$.\n$23 = 41 + (m-1)(-2) \\Rightarrow -18 = -2(m-1) \\Rightarrow 9 = m-1 \\Rightarrow m = 10$.\nJami 10 ta had bor. Bu 5 ta juft hadni tashkil qiladi ($41^2 - 39^2$, $37^2 - 35^2$, $33^2 - 31^2$, $29^2 - 27^2$, $25^2 - 23^2$).\nBu yerda $n=5$ juft had bor.\nJavoblar $160, 144, 128, 116, 96$ arifmetik progressiyada.\nJami yig'indi: $160 + 144 + 128 + 116 + 96 = 640$.",
+        "answer_letter": "B"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

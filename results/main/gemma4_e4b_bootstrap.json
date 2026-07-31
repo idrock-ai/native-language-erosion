@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Musa Jalilning bastakor Jiganov bilan hamkorlikda yozilgan, davlat mukofoti bilan taqdirlangan operasini toping.",
+        "options": "A) «Xat tashuvchi»\nB) «O'rtoqqa»\nC) «Oltinsoch»\nD) «Ordenli millionerlar»",
+        "reasoning": "Musa Jalil va bastakor Jiganov hamkorligida yozilgan va davlat mukofoti bilan taqdirlangan opera \"Oltinsoch\"dir. Bu ma'lumot opera tarixi va san'atga oid faktlarga asoslanadi.",
+        "answer_letter": "C"
+      },
+      {
+        "augmented": true,
+        "question": "Umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formula bilan berilgan ketma-ketlikning dastlabki yigirmata hadining o'rta arifmetigini toping.",
+        "options": "A) $16\\frac{3}{4}$\nB) $16\\frac{1}{4}$\nC) $14\\frac{1}{4}$\nD) $14\\frac{3}{4}$",
+        "reasoning": "Berilgan ketma-ketlikning umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formulasiga ko'ra. Dastlabki $N$ hadining o'rta arifmetik qiymati $\\frac{x_1 + x_N}{2}$ formulasi bilan topiladi. Bu yerda $N=20$.\n$x_1 = \\frac{3(1)}{2} + 1 = \\frac{3}{2} + 1 = \\frac{3+2}{2} = \\frac{5}{2} = 2\\frac{1}{2}$.\n$x_{20} = \\frac{3(20)}{2} + 1 = 30 + 1 = 31$.\nO'rta arifmetik qiymat: $\\frac{x_1 + x_{20}}{2} = \\frac{\\frac{5}{2} + 31}{2} = \\frac{\\frac{5}{2} + \\frac{62}{2}}{2} = \\frac{\\frac{67}{2}}{2} = \\frac{67}{4}$.\n$\\frac{67}{4} = 16$ va $\\frac{3}{4}$, ya'ni $16\\frac{3}{4}$.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "O'zgarmas tok manbayiga ulangan yassi kondensator berilgan. Uning qoplamalari orasidagi masofa 2 marta orttirilsa, kondensatorning energiyasi qanday o'zgaradi?",
+        "options": "A) 2 marta ortadi\nB) 2 marta kamayadi\nC) 4 marta kamayadi\nD) 4 marta ortadi",
+        "reasoning": "Kondensatorning quvvat energiyasi $W = \\frac{Q^2}{2C}$ formulasi bilan beriladi. Tok manbai o'zgarmasligi sababli, kondensatorga quvvat beriladigan quvvat $P = V^2/R$ (yoki $P = V^2/2L$ agar induktivga ulangan bo'lsa) bilan bog'liq bo'ladi, ammo bu yerda faqat kondensator energiyasi o'zgarishi so'ralgan. Kondensator quvvatga ulangan va tok manbai o'zgarmas bo'lsa, uning quvvatga ulangan holatida quvvat $W = \\frac{1}{2} C V^2$ bo'ladi. Kondensatorning quvvati $C = \\frac{\\epsilon A}{d}$ formulasiga ko'ra, masofa $d$ ikki barobar oshsa, quvvat $C$ ikki barobar kamaydi. Shu sababli, energiya $W$ ham ikki barobar kamayadi.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "$\\frac{\\sqrt{9-x^{2}}}{2x+5}=\\frac{\\sqrt{9-x^{2}}}{x-5}$ tenglama nechta haqiqiy ildizga ega?",
+        "options": "A) 4\nB) 3\nC) 0\nD) 2",
+        "reasoning": "Berilgan tenglama $\\frac{\\sqrt{9-x^{2}}}{2x+5}=\\frac{\\sqrt{9-x^{2}}}{x-5}$ shaklida. Tenglamaning haqiqiy ildizlari uchun $9-x^2 \\ge 0$ bo'lishi kerak, ya'ni $-3 \\le x \\le 3$. Shuningdek, maxrajlar nolga teng bo'lmasligi kerak, ya'ni $2x+5 \\ne 0 \\implies x \\ne -5/2$ va $x-5 \\ne 0 \\implies x \\ne 5$. Bu cheklovlar $-3 \\le x \\le 3$ doirasida bajariladi. Tenglamani qayta yozsak: $\\frac{\\sqrt{9-x^{2}}}{2x+5} - \\frac{\\sqrt{9-x^{2}}}{x-5} = 0$. $\\sqrt{9-x^{2}} \\left( \\frac{1}{2x+5} - \\frac{1}{x-5} \\right) = 0$. Bu ikki holatda ildiz berishi mumkin: 1) $\\sqrt{9-x^{2}} = 0$, ya'ni $x = \\pm 3$. 2) $\\frac{1}{2x+5} = \\frac{1}{x-5}$, ya'ni $2x+5 = x-5$, $x = -10$. Ikkinchi holatda $x=-10$ bo'lsa, bu $-3 \\le x \\le 3$ chekloviga zid keladi, shuning uchun bu holat ildiz bermaydi. Birinchi holatda $x=3$ va $x=-3$ haqiqiy ildizlardir. Shuningdek, $x=0$ bo'lsa, tenglama $\\frac{3}{5} = \\frac{3}{-5}$ bo'lib, bu noto'g'ri. Shuning uchun ildizlar $x=3$ va $x=-3$ hisoblanadi. Demak, 2 ta haqiqiy ildiz bor.",
+        "answer_letter": "D"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

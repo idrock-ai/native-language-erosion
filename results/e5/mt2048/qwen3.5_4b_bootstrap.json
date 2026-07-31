@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Kichikka ulug'lik ulug'dan bo'lar, Ulug'ga egilsa, kichik qut olar. Ushbu parcha haqidagi qaysi fikrlar to'g'ri emas? 1) vositali to'ldiruvchilar sifatlar bilan ifodalangan; 2) ot bilan ifodalangan ega qatnashgan; 3) otlashgan so'z bilan ifodalangan vositasiz to'ldiruvchi qatnashgan; 4) sifat bilan ifodalangan gap bo'laklari ushbu gapdagi so'z birikmalarida hokim qism vazifasini bajargan.",
+        "options": "A) 2, 3\nB) 1, 2\nC) 1, 4\nD) 3, 4",
+        "reasoning": "Bu gapda \"kichik\" va \"ulug'lik\" sifatlar bilan ifodalangan vositali to'ldiruvchilar mavjud (1-to'g'ri). \"Kichikka\" va \"Ulug'ga\" ega qatnashlari ot bilan ifodalangan (2-to'g'ri). \"Kichik\" so'zi otlashgan so'z emas, balki sifat hisoblanadi (3-xato). \"Kichik\" va \"ulug'lik\" so'zlarining vazifasi hokim emas, balki to'ldiruvchi (4-xato). Shunday qilib, noto'g'ri fikrlar 3 va 4.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formula bilan berilgan ketma-ketlikning dastlabki yigirmata hadining o'rta arifmetigini toping.",
+        "options": "A) $16\\frac{3}{4}$\nB) $16\\frac{1}{4}$\nC) $14\\frac{1}{4}$\nD) $14\\frac{3}{4}$",
+        "reasoning": "Dastlabki yigirmata hadning yig'indisini hisoblash uchun $S_{20} = \\frac{20}{2}(x_1 + x_{20})$ formuladan foydalanamiz. $x_1 = 4$ va $x_{20} = 31$ bo'lgani uchun yig'indi 340 ga teng. O'rta arifmetik esa $340 / 20 = 17$ ga teng, lekin variantlarda 17 yo'q. Savolni qayta ko'rib chiqishda $x_1=3.5$ va $x_{20}=30.5$ deb hisoblaganda natija $17$ chiqadi. Variantlarni tekshirganda eng yaqin va mantiqiy javob $16\\frac{3}{4}$ (16.75) yoki $14\\frac{3}{4}$ (14.75) bo'lishi mumkin, ammo standart hisob-kitob $17$ beradi. Agar savolda xatolik bo'lsa ham, variantlar orasida eng yaqin qiymatni tanlash kerak. Bu holatda variantlar bilan to'g'ri moslashish qiyin, lekin hisoblash jarayoni $17$ ni ko'rsatadi.\n*(Eslatma: Aniq hisob-kitob $x_1=3.5, x_{20}=30.5 \\Rightarrow S_{20}=340 \\Rightarrow \\text{O.A.}=17$. Variantlar bilan to'g'ri moslashish imkonsiz, lekin test shartlariga asoslanib eng yaqin variantni tanlash kerak.)*\n\n**To'g'ri hisoblash:**\n$x_1 = \\frac{3(1)}{2} + 1 = 2.5$\n$x_{20} = \\frac{3(20)}{2} + 1 = 31$\n$S_{20} = \\frac{20}{2}(2.5 + 31) = 10 \\times 33.5 = 335$\nO'rta arifmetik $M = \\frac{335}{20} = 16.75 = 16\\frac{3}{4}$.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "Daues rejasi qachon qabul qilingan?",
+        "options": "A) 1930-yilda\nB) 1924-yilda\nC) 1918-yilda\nD) 1929-yilda",
+        "reasoning": "Daues rejasi 1924-yilda qabul qilingan.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi javobdagi baytda tarse' she'riy san'at qo'llangan?",
+        "options": "A) Ikki mahbubni ko'rdum, bir-birisin ko'rmagan, Ikkisining o'rtasiga, do'stlar, qil ham sig'magan.\nB) Sendek menga bir yori jafokor topilmas, Mendek senga bir zori vafodor topilmas\nC) Hech kim mendek, ilohi, yoridin ayrulmasun, Mehribon munis o'shal dildoridin ayrilmasin.\nD) Har nechakim sabr ta'mirini bunyod ayladim, Ashk selobida vayron o'ldi obodim, eshit.",
+        "reasoning": "Bu savolda tarse' she'riy san'at qo'llangan javob B variantidagi \"Sendek menga...\" qo'shasi bo'lib, u shu san'atning asosiy namunasidir.",
+        "answer_letter": "B"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

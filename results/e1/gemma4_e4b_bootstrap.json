@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Kichikka ulug'lik ulug'dan bo'lar, Ulug'ga egilsa, kichik qut olar. Ushbu parcha haqidagi qaysi fikrlar to'g'ri emas? 1) vositali to'ldiruvchilar sifatlar bilan ifodalangan; 2) ot bilan ifodalangan ega qatnashgan; 3) otlashgan so'z bilan ifodalangan vositasiz to'ldiruvchi qatnashgan; 4) sifat bilan ifodalangan gap bo'laklari ushbu gapdagi so'z birikmalarida hokim qism vazifasini bajargan.",
+        "options": "A) 2, 3\nB) 1, 2\nC) 1, 4\nD) 3, 4",
+        "reasoning": "Berilgan parcha (\"Kichikka ulug'lik ulug'dan bo'lar, Ulug'ga egilsa, kichik qut olar.\") tahlil qilinganda, 1-fikr (vositali to'ldiruvchilar sifatlar bilan ifodalangan) to'g'ri, chunki \"ulug'lik ulug'dan\" va \"kichik qut\" kabi joylarda sifatlar ishlatilgan. 2-fikr (ot bilan ifodalangan ega qatnashgan) ham to'g'ri, chunki \"Kichikka\" va \"Ulug'ga\" kabi otlar ega vazifasini bajaradi. 3-fikr (otlashgan so'z bilan ifodalangan vositasiz to'ldiruvchi qatnashgan) noto'g'ri, chunki bu yerda aniq birotgan vositasiz to'ldiruvchi mavjud emas. 4-fikr (sifat bilan ifodalangan gap bo'laklari ushbu gapdagi so'z birikmalarida hokim qism vazifasini bajargan) noto'g'ri, chunki hokim qism vazifasini bajaradigan asosiy so'zlar (otlar) mavjud. Shu sababli, to'g'ri emas fikrlar 3 va 4 hisoblanadi.",
+        "answer_letter": "D"
+      },
+      {
+        "augmented": true,
+        "question": "Umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formula bilan berilgan ketma-ketlikning dastlabki yigirmata hadining o'rta arifmetigini toping.",
+        "options": "A) $16\\frac{3}{4}$\nB) $16\\frac{1}{4}$\nC) $14\\frac{1}{4}$\nD) $14\\frac{3}{4}$",
+        "reasoning": "Berilgan ketma-ketlikning umumiy hadi $x_{n}=\\frac{3n}{2}+1$ formulasiga ko'ra. Dastlabki $N$ hadining o'rta arifmetik qiymati $\\frac{x_1 + x_N}{2}$ formulasi bilan topiladi. Bu yerda $N=20$.\n$x_1 = \\frac{3(1)}{2} + 1 = \\frac{3}{2} + 1 = \\frac{3+2}{2} = \\frac{5}{2} = 2\\frac{1}{2}$.\n$x_{20} = \\frac{3(20)}{2} + 1 = 30 + 1 = 31$.\nO'rta arifmetik qiymat: $\\frac{x_1 + x_{20}}{2} = \\frac{\\frac{5}{2} + 31}{2} = \\frac{\\frac{5}{2} + \\frac{62}{2}}{2} = \\frac{\\frac{67}{2}}{2} = \\frac{67}{4}$.\n$\\frac{67}{4} = 16$ va $\\frac{3}{4}$, ya'ni $16\\frac{3}{4}$.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "O'zgarmas tok manbayiga ulangan yassi kondensator berilgan. Uning qoplamalari orasidagi masofa 2 marta orttirilsa, kondensatorning energiyasi qanday o'zgaradi?",
+        "options": "A) 2 marta ortadi\nB) 2 marta kamayadi\nC) 4 marta kamayadi\nD) 4 marta ortadi",
+        "reasoning": "Kondensatorning quvvati $C$ va unga ulangan tok manbai (ya'ni, doira quvvati $U$) doimiy bo'lsa, kondensatorning saqlayotgan energiyasi $W = \\frac{1}{2} C U^2$ formulasiga ko'ra proporsionaldir. Kondensator quvvati $C$ masofaga $d$ bog'liq bo'lib, $C \\propto \\frac{1}{d}$ formulasi bilan beriladi. Agar masofa $d$ ikki barobar ($d' = 2d$) kelsa, yangi quvvat $C'$ quyidagicha bo'ladi: $C' = \\frac{1}{2} C$. Shu sababli, yangi energiya $W'$ quyidagicha bo'ladi: $W' = \\frac{1}{2} C' U^2 = \\frac{1}{2} (\\frac{1}{2} C) U^2 = \\frac{1}{2} (\\frac{1}{2} C U^2) = \\frac{1}{2} W$. Demak, energiya 2 marta kamaydi.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "$x^{2}+a x=1$ tenglamaning $x_{1}$ va $x_{2}$ ildizlari $\\frac{x_{1}}{x_{2}}+\\frac{x_{2}}{x_{1}}=-18$ tenglikni qanoatlantirsa, $a^{2}-2$ ning qiymatini toping.",
+        "options": "A) 7\nB) 34\nC) 2\nD) 14",
+        "reasoning": "Berilgan kvadrat tenglama $x^{2}+ax-1=0$ ning ildizlari $x_1$ va $x_2$ uchun Vieta ko'rinishidagi formulalardan foydalanamiz. $x_1 + x_2 = -a$ va $x_1 x_2 = -1$.\nBerilgan shart $\\frac{x_{1}}{x_{2}}+\\frac{x_{2}}{x_{1}}=-18$ ni soddalashtiramiz:\n$\\frac{x_{1}^2 + x_{2}^2}{x_{1}x_{2}} = -18$\n$x_{1}^2 + x_{2}^2 = (x_1 + x_2)^2 - 2x_1 x_2$ ni qo'yamiz:\n$\\frac{(x_1 + x_2)^2 - 2x_1 x_2}{x_1 x_2} = -18$\nQiymatlarni qo'yamiz:\n$\\frac{(-a)^2 - 2(-1)}{-1} = -18$\n$\\frac{a^2 + 2}{-1} = -18$\n$a^2 + 2 = 18$\n$a^2 = 16$\n$a = \\pm 4$.\nBizdan $a^2 - 2$ ning qiymatini topish kerak.\n$a^2 - 2 = 16 - 2 = 14$.",
+        "answer_letter": "D"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

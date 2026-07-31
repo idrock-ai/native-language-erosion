@@ -1,0 +1,110 @@
+{
+ "model": "gemma4:e4b",
+ "seed": 42,
+ "modes": {
+  "cot": {
+   "n_demos": 0,
+   "overall": 43.8,
+   "by_subject": {
+    "fizika": {
+     "total": 38,
+     "correct": 20,
+     "accuracy": 52.6
+    },
+    "matematika": {
+     "total": 38,
+     "correct": 29,
+     "accuracy": 76.3
+    },
+    "ona_tili": {
+     "total": 100,
+     "correct": 31,
+     "accuracy": 31.0
+    },
+    "tarix": {
+     "total": 75,
+     "correct": 30,
+     "accuracy": 40.0
+    }
+   }
+  },
+  "skewed": {
+   "n_demos": 4,
+   "overall": 39.0,
+   "by_subject": {
+    "fizika": {
+     "total": 38,
+     "correct": 17,
+     "accuracy": 44.7
+    },
+    "matematika": {
+     "total": 38,
+     "correct": 24,
+     "accuracy": 63.2
+    },
+    "ona_tili": {
+     "total": 100,
+     "correct": 28,
+     "accuracy": 28.0
+    },
+    "tarix": {
+     "total": 75,
+     "correct": 29,
+     "accuracy": 38.7
+    }
+   }
+  },
+  "balanced": {
+   "n_demos": 4,
+   "overall": 41.0,
+   "by_subject": {
+    "fizika": {
+     "total": 38,
+     "correct": 16,
+     "accuracy": 42.1
+    },
+    "matematika": {
+     "total": 38,
+     "correct": 29,
+     "accuracy": 76.3
+    },
+    "ona_tili": {
+     "total": 100,
+     "correct": 30,
+     "accuracy": 30.0
+    },
+    "tarix": {
+     "total": 75,
+     "correct": 28,
+     "accuracy": 37.3
+    }
+   }
+  },
+  "native": {
+   "n_demos": 4,
+   "overall": 43.0,
+   "by_subject": {
+    "fizika": {
+     "total": 38,
+     "correct": 15,
+     "accuracy": 39.5
+    },
+    "matematika": {
+     "total": 38,
+     "correct": 31,
+     "accuracy": 81.6
+    },
+    "ona_tili": {
+     "total": 100,
+     "correct": 30,
+     "accuracy": 30.0
+    },
+    "tarix": {
+     "total": 75,
+     "correct": 32,
+     "accuracy": 42.7
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "model": "qwen3.5:9b",
+ "engine": "ollama",
+ "seed": 42,
+ "max_tokens": 512,
+ "conditions": {
+  "cot": {
+   "deployment": {
+    "overall": 56.5,
+    "by_subject": {
+     "History": {
+      "total": 65,
+      "correct": 47,
+      "accuracy": 72.3
+     },
+     "Mathematics": {
+      "total": 65,
+      "correct": 34,
+      "accuracy": 52.3
+     },
+     "Physics": {
+      "total": 65,
+      "correct": 37,
+      "accuracy": 56.9
+     },
+     "Turkish_Language_and_Literature": {
+      "total": 65,
+      "correct": 29,
+      "accuracy": 44.6
+     }
+    }
+   },
+   "rescue": {
+    "overall": 56.5,
+    "by_subject": {
+     "History": {
+      "total": 65,
+      "correct": 47,
+      "accuracy": 72.3
+     },
+     "Mathematics": {
+      "total": 65,
+      "correct": 34,
+      "accuracy": 52.3
+     },
+     "Physics": {
+      "total": 65,
+      "correct": 37,
+      "accuracy": 56.9
+     },
+     "Turkish_Language_and_Literature": {
+      "total": 65,
+      "correct": 29,
+      "accuracy": 44.6
+     }
+    }
+   }
+  },
+  "dspy_bootstrap": {
+   "deployment": {
+    "overall": 63.8,
+    "by_subject": {
+     "History": {
+      "total": 65,
+      "correct": 44,
+      "accuracy": 67.7
+     },
+     "Mathematics": {
+      "total": 65,
+      "correct": 47,
+      "accuracy": 72.3
+     },
+     "Physics": {
+      "total": 65,
+      "correct": 42,
+      "accuracy": 64.6
+     },
+     "Turkish_Language_and_Literature": {
+      "total": 65,
+      "correct": 33,
+      "accuracy": 50.8
+     }
+    }
+   },
+   "rescue": {
+    "overall": 64.2,
+    "by_subject": {
+     "History": {
+      "total": 65,
+      "correct": 44,
+      "accuracy": 67.7
+     },
+     "Mathematics": {
+      "total": 65,
+      "correct": 47,
+      "accuracy": 72.3
+     },
+     "Physics": {
+      "total": 65,
+      "correct": 43,
+      "accuracy": 66.2
+     },
+     "Turkish_Language_and_Literature": {
+      "total": 65,
+      "correct": 33,
+      "accuracy": 50.8
+     }
+    }
+   }
+  },
+  "dspy_bootstrap_compliant": {
+   "deployment": {
+    "overall": 61.9,
+    "by_subject": {
+     "History": {
+      "total": 65,
+      "correct": 45,
+      "accuracy": 69.2
+     },
+     "Mathematics": {
+      "total": 65,
+      "correct": 41,
+      "accuracy": 63.1
+     },
+     "Physics": {
+      "total": 65,
+      "correct": 43,
+      "accuracy": 66.2
+     },
+     "Turkish_Language_and_Literature": {
+      "total": 65,
+      "correct": 32,
+      "accuracy": 49.2
+     }
+    }
+   },
+   "rescue": {
+    "overall": 62.3,
+    "by_subject": {
+     "History": {
+      "total": 65,
+      "correct": 45,
+      "accuracy": 69.2
+     },
+     "Mathematics": {
+      "total": 65,
+      "correct": 41,
+      "accuracy": 63.1
+     },
+     "Physics": {
+      "total": 65,
+      "correct": 43,
+      "accuracy": 66.2
+     },
+     "Turkish_Language_and_Literature": {
+      "total": 65,
+      "correct": 33,
+      "accuracy": 50.8
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "model": "gemma4:e4b",
+ "engine": "ollama",
+ "seed": 42,
+ "max_tokens": 512,
+ "optimizer": "MIPROv2",
+ "search": {
+  "num_candidates": 5,
+  "num_trials": 10,
+  "minibatch_size": 25,
+  "val_size": 100
+ },
+ "conditions": {
+  "cot": {
+   "deployment": {
+    "overall": 40.6,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 20,
+      "accuracy": 52.6
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 30,
+      "accuracy": 78.9
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 26,
+      "accuracy": 26.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 26,
+      "accuracy": 34.7
+     }
+    }
+   },
+   "rescue": {
+    "overall": 41.0,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 21,
+      "accuracy": 55.3
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 30,
+      "accuracy": 78.9
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 26,
+      "accuracy": 26.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 26,
+      "accuracy": 34.7
+     }
+    }
+   }
+  },
+  "dspy_mipro": {
+   "deployment": {
+    "overall": 45.0,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 23,
+      "accuracy": 60.5
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 31,
+      "accuracy": 81.6
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 29,
+      "accuracy": 29.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 30,
+      "accuracy": 40.0
+     }
+    }
+   },
+   "rescue": {
+    "overall": 45.4,
+    "by_subject": {
+     "fizika": {
+      "total": 38,
+      "correct": 24,
+      "accuracy": 63.2
+     },
+     "matematika": {
+      "total": 38,
+      "correct": 31,
+      "accuracy": 81.6
+     },
+     "ona_tili": {
+      "total": 100,
+      "correct": 29,
+      "accuracy": 29.0
+     },
+     "tarix": {
+      "total": 75,
+      "correct": 30,
+      "accuracy": 40.0
+     }
+    }
+   }
+  }
+ },
+ "mipro_program": {
+  "n_demos": 4,
+  "demo_payload_chars": 4790,
+  "instructions": "You are an expert academic assessor tasked with grading high-stakes, standardized multiple-choice exams in Uzbek across various disciplines (Physics, Math, History, Language). Your primary goal is to solve the provided MCQ while strictly adhering to a structured output format that simulates the highest level of rigor and conciseness required for automated grading.\n\n**Task:** Given a complex multiple-choice question in Uzbek and its options, you must solve it step-by-step, providing a mandatory, very brief justification, and concluding with *only* the correct single-letter choice.\n\n**Constraints:**\n1.  **Reasoning (Mulohaza):** Provide a justification that is highly concise, limited to a maximum of two (2) complete sentences. This reasoning must be mathematically sound or factually precise.\n2.  **Answer Letter:** Output *only* the single character corresponding to the correct option (A, B, C, or D). No other text is allowed here.\n\n**Input:**\n*   Question: [The full question text]\n*   Options: [The list of options]\n\n**Output Format (Must strictly follow this structure):**\nReasoning: [Your 1-2 sentence reasoning]\nAnswer Letter: [The single letter A/B/C/D]\n\n**Example of required output style (do not include this text in the final answer):**\nReasoning: ...\nAnswer Letter: C\n\n**Solve the following problem using the above constraints:**\nQuestion: {question}\nOptions: {options}"
+ }
+}

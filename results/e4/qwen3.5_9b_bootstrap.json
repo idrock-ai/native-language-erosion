@@ -1,0 +1,65 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Qaysi javobda nomi keltirilgan devon Navoiy qalamiga mansub emas?",
+        "options": "A) «Navodir ush-shabob»\nB) «Badoye ul-bidoya»\nC) «Saodat ul-iqbol»\nD) «Devoni Foni»",
+        "reasoning": "«Navodir ush-shabob» asari Navoiyga nisbatlanadi, «Badoye ul-bidoya» va «Devoni Foni» ham uning asarlaridir. «Saodat ul-iqbol» esa Navoiyning asari emas, balki boshqa shoir (masalan, Ali-Shir Navoiydan keyingi davr yoki turkman adabiyotiga oid)ga tegishli bo'lib, u Navoiy qalamiga mansub emas.",
+        "answer_letter": "C"
+      },
+      {
+        "augmented": true,
+        "question": "Navoiyning qaysi g'azalida majoziy tasvir orqali ilohiy ishq kuylanib, dastlabki besh baytda boshdan oxir lirik qahramonning va'da berib, so'zida turmagan yorni kuta-kuta chekkan iztiroblari haqida so'z boradi, begona baytda esa ishqda undan ko'ra «avvalqadam» bo'lgan «tolibi sodiq», ya'ni pir izlayotgani bayon qilinadi?",
+        "options": "A) «Deyin» radifli\nB) «Kelmadi» radifli\nC) «Bo'ldum sanga» radifli\nD) «Qilg'il» radifli",
+        "reasoning": "Navoiyning «Kelmadi» radifli g'azalida lirik qahramon yorni kutib turib, undan ko'ra «tolibi sodiq» (pir) izlashga qaror qiladi. Bu g'azalning mazmuni va baytlar tartibi savoldagi tavsifga to'liq mos keladi.",
+        "answer_letter": "B"
+      },
+      {
+        "augmented": true,
+        "question": "Qaysi javobda Odil Yoqubovning qissalari berilgan?",
+        "options": "A) «Qanot juft bo'ladi», «Billur qandillar»\nB) «Yurak yonmog'i kerak», «Bir koshona sirlari»\nC) «Ko'hna dunyo», «Olma gullaganda»\nD) «Qadrdon dalalar», «Hukm»",
+        "reasoning": "Odil Yoqubovning mashhur asarlariga «Qanot juft bo'ladi» va «Billur qandillar» kiradi. Boshqa variantlardagi asarlar boshqa yozuvchilarga tegishli yoki yo'q.",
+        "answer_letter": "A"
+      },
+      {
+        "augmented": true,
+        "question": "«Zarbulmasal»dagi qaysi masalda «Ustoz ko'rmagan shogird har maqomga yo'rg'alar», deganlaridek, o'zbilarmon obrazning ham ayanchli, ham kulgili holga tushishi ko'rsatib berilgan?",
+        "options": "A) «Tuya bilan bo'taloq»\nB) «Maymun bilan Najjor»\nC) «Kabutar bilan Zog'»\nD) «Toshbaqa bilan Chayon»",
+        "reasoning": "«Zarbulmasal»dagi «Maymun bilan Najjor» masalasi ustozsizlik va shogirdning xato qilishini, bu esa uning ayanchli va kulgili holatini ifodalaydi.",
+        "answer_letter": "B"
+      }
+    ],
+    "signature": {
+      "instructions": "O'zbek tilidagi test savoliga javob ber.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Options:",
+          "description": "${options}"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Juda qisqa mulohaza, ko'pi bilan 2 gap."
+        },
+        {
+          "prefix": "Answer Letter:",
+          "description": "Faqat bitta harf: A, B, C yoki D."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}
